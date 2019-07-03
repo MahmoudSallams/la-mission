@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Counter shortcode style - begin
+   ========================================================================== */
+
+.mkdf-fu {
+    &--two-lines {
+        .mkdf-fu__title {
+            display: block;
+            padding-right: 0;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        font-size: 15px;
+        padding-right: 7px;
+    }
+
+    &__links {
+        display: inline-block;
+    }
+
+    &__link {
+        margin-right: 2px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   Counter shortcode style - end
+   ========================================================================== */

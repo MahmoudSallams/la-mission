@@ -1,0 +1,283 @@
+/* ==========================================================================
+   Fullscreen Info shortcode style - begin
+   ========================================================================== */
+
+.mkdf-fullscreen-info {
+    position: relative;
+    height: 100vh;
+
+    //intro
+    &.mkdf-fi-intro {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+
+        .touch & {
+            position: relative;
+        }
+
+        @include mkdfTransformOrigin(0% 50%);
+        @include mkdfTransitionTransform(1.2s $main-easing);
+    }
+
+    .mkdf-intro-bg {
+        @include mkdfAbsoluteHolderLayout();
+
+        background-color: #000;
+    }
+
+    .mkdf-intro-inner {
+        position: relative;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 7vmax;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            /* IE10+ CSS styles go here */
+            padding-top: 7vw; //ie fallback
+        }
+    }
+
+    .mkdf-intro-text-holder {
+        margin: 8.6vmax 0;
+        text-align: center;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            /* IE10+ CSS styles go here */
+            margin: 8.6vw 0; //ie fallback
+        }
+
+        @include laptop-landscape-mac() {
+            margin: 4.6vmax 0;
+        }
+    }
+
+    .mkdf-fi-title {
+        position: relative;
+        font-family: $default-heading-font;
+        font-weight: 700;
+        font-size: 60px;
+        letter-spacing: -0.03em;
+        text-indent: -0.03em;
+        padding: 13px 26px;
+
+        >span {
+            position: relative;
+        }
+
+        .mkdf-bg-stripe {
+            @include mkdfAbsoluteHolderLayout();
+            overflow: hidden;
+        }
+    }
+
+    @include keyframes(mkdfStripe1) {
+        0% {
+            @include mkdfTransform(translateX(100%));
+        }
+
+        45%,
+        55% {
+            @include mkdfTransform(translateX(0%));
+        }
+
+        100% {
+            @include mkdfTransform(translateX(-100%));
+        }
+    }
+
+    .mkdf-intro-title {
+        .mkdf-end {
+            @include mkdfTransform(scaleX(0));
+            @include mkdfTransformOrigin(100% 50%);
+            @include mkdfTransitionTransform(1s $main-easing);
+            background-color: #fff;
+        }
+
+        .mkdf-start > span {
+            content: '';
+            @include mkdfAbsoluteHolderLayout();
+            background-color: #fff;
+            @include mkdfAnimation(mkdfStripe1 2s $main-easing infinite forwards);
+        }
+    }
+
+    .mkdf-intro-subtitle {
+        font-size: 17px;
+        letter-spacing: -0.03em;
+        color: #fff;
+        opacity: 0;
+
+        @include mkdfTransition(opacity .4s);
+    }
+
+    .mkdf-intro-tagline {
+        font-size: 14px;
+        color: #fff;
+        margin: 3px 0 0;
+        line-height: 1;
+        opacity: 0;
+
+        @include mkdfTransition(opacity .4s .1s);
+    }
+
+    .mkdf-scroll-down {
+        cursor: pointer;
+
+        svg {
+            height: 80px;
+            stroke: #fff;
+            opacity: 0;
+
+            @include mkdfTransition(opacity .4s);
+        }
+
+        .mkdf-mouse-outline {
+            stroke-dasharray: 148;
+            stroke-dashoffset: 148;
+            stroke-width: 2px;
+
+            @include mkdfTransition(1s $main-easing);
+        }
+
+        .mkdf-wheel-outline {
+            stroke-dasharray: 29;
+            stroke-dashoffset: 29;
+
+            @include mkdfTransition(.7s $main-easing .2s);
+        }
+
+        .mkdf-wheel {
+            stroke-dasharray: 5;
+            stroke-dashoffset: 5;
+
+            @include mkdfTransition(.5s $main-easing .5s);
+        }
+
+        circle {
+            opacity: 0;
+
+            @for $i from 1 to 3 {
+                &:nth-of-type(#{$i}) {
+                    @include mkdfTransition(.5s $main-easing $i * 0.1s);
+                }
+            }
+        }
+
+        .mkdf-arrow {
+            opacity: 0;
+
+            @include mkdfTransform(translateY(-10px));
+            @include mkdfTransition(.3s $main-easing .3s);
+        }
+    }
+
+    //outro
+    .mkdf-outro-inner {
+        position: relative;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-bottom: 5vw;
+    }
+
+    .mkdf-outro-bg {
+        box-sizing: border-box;
+        position: absolute;
+        top: 28px;
+        right: 28px;
+        bottom: 28px;
+        left: 28px;
+        background-image: url(../img/bg-pattern.png);
+        opacity: .7;
+    }
+
+    &.mkdf-fi-outro {
+        background-color: #000;
+
+        svg {
+            height: 102px;
+            fill: #fff;
+            margin-bottom: 8vh;
+        }
+
+        .mkdf-fi-title {
+            color: #fff;
+
+            >span {
+                position: relative;
+            }
+
+            .mkdf-bg-stripe {
+                position: absolute;
+                background-color: #000;
+            }
+        }
+
+        .mkdf-outro-inner>div {
+            opacity: 0;
+
+            @for $i from 1 to 5 {
+                &:nth-of-type(#{$i}) {
+                    @include mkdfTransition(opacity .4s $i * 0.12s);
+                }
+            }
+        }
+
+        &.mkdf-appeared {
+            .mkdf-outro-inner>div {
+                opacity: 1;
+            }
+        }
+    }
+
+    .mkdf-outro-title-holder {
+        margin-bottom: 65px;
+    }
+
+    .mkdf-outro-img {
+        margin-bottom: 9vh;
+    }
+
+    .mkdf-btm-info-holder {
+        position: absolute;
+        bottom: 8vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5.2%;
+        box-sizing: border-box;
+
+        span {
+            font-family: $default-heading-font;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        strong {
+            font-size: 17px;
+        }
+
+        .mkdf-btm-info-left {
+            width: 45%;
+        }
+
+        .mkdf-btm-info-right {
+            width: 45%;
+            text-align: right;
+        }
+    }
+}
+
+/* ==========================================================================
+   Fullscreen Info shortcode style - end
+   ========================================================================== */

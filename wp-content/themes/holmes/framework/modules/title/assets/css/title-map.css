@@ -1,0 +1,215 @@
+/* ==========================================================================
+   Title styles - begin
+   ========================================================================== */
+/* ==========================================================================
+   Title style - begin
+   ========================================================================== */
+.mkdf-title-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 210px;
+  background-color: #f6f6f6;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  z-index: 101;
+}
+
+.mkdf-title-holder.mkdf-title-full-width .mkdf-grid {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.mkdf-title-holder.mkdf-bg-responsive {
+  height: auto !important;
+}
+
+.mkdf-title-holder.mkdf-bg-responsive .mkdf-title-image {
+  display: block;
+}
+
+.mkdf-title-holder.mkdf-bg-responsive .mkdf-title-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100% !important;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+}
+
+.mkdf-title-holder.mkdf-bg-parallax {
+  background-attachment: fixed;
+}
+
+.mkdf-title-holder.mkdf-title-pattern .mkdf-title-wrapper {
+  background: url(../img/theme-pattern.png);
+  background-repeat: repeat;
+}
+
+.mkdf-title-holder .mkdf-title-image {
+  display: none;
+}
+
+.mkdf-title-holder .mkdf-title-image img {
+  display: block;
+  width: 100%;
+}
+
+.mkdf-title-holder .mkdf-title-wrapper {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.mkdf-title-holder .mkdf-title-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-title-holder.mkdf-title-va-top-header-bottom .mkdf-title-inner, .mkdf-title-holder.mkdf-title-va-top .mkdf-title-inner {
+  padding-top: 106px;
+  vertical-align: top;
+}
+
+.mkdf-title-holder.mkdf-title-full-height {
+  height: 100vh;
+  background-size: cover;
+}
+
+/* ==========================================================================
+   Title style - end
+   ========================================================================== */
+/* ==========================================================================
+   Breadcrumbs Title type style - begin
+   ========================================================================== */
+.mkdf-title-holder.mkdf-breadcrumbs-type .mkdf-breadcrumbs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mkdf-title-holder.mkdf-breadcrumbs-type .mkdf-breadcrumbs .mkdf-breadcrumbs-inner {
+  display: inline-block;
+  width: auto;
+  background: #000000;
+  color: #000000;
+  font-size: 17px;
+  line-height: 1.235em;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 12px 20px;
+}
+
+.mkdf-title-holder.mkdf-breadcrumbs-type .mkdf-breadcrumbs.mkdf-has-inline-style a {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.mkdf-title-holder.mkdf-breadcrumbs-type .mkdf-breadcrumbs.mkdf-has-inline-style a:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.mkdf-title-holder.mkdf-breadcrumbs-type .mkdf-breadcrumbs a,
+.mkdf-title-holder.mkdf-breadcrumbs-type .mkdf-breadcrumbs span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  margin: 0 4px;
+}
+
+.mkdf-title-holder.mkdf-breadcrumbs-type .mkdf-breadcrumbs a:hover {
+  color: #a8a8a8;
+}
+
+/* ==========================================================================
+   Breadcrumbs Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard Title type style - begin
+   ========================================================================== */
+.mkdf-title-holder.mkdf-standard-type .mkdf-title-text-wrapper .mkdf-page-subtitle {
+  margin: 10px 0 0;
+}
+
+.mkdf-title-holder.mkdf-standard-type.mkdf-title-va-center .mkdf-title-inner {
+  vertical-align: middle;
+  bottom: unset;
+}
+
+/* ==========================================================================
+   Standard Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard Title type style - begin
+   ========================================================================== */
+.mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper {
+  background-color: #ffffff;
+  padding: 66px 82px 57px;
+  box-sizing: border-box;
+}
+
+.mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-numbered-title-holder {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-numbered-title-holder .mkdf-nt-title {
+  white-space: nowrap;
+}
+
+.mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-numbered-title-holder .mkdf-nt-line {
+  margin: 16px 13px 0 6px;
+}
+
+.mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-numbered-title-holder .mkdf-nt-text .mkdf-title-cat {
+  margin-right: 6px;
+}
+
+.mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-numbered-title-holder .mkdf-nt-text .mkdf-title-cat:after {
+  content: ',';
+}
+
+.mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-numbered-title-holder .mkdf-nt-text .mkdf-title-cat:last-child:after {
+  display: none;
+}
+
+.mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-page-title {
+  margin: 0 80px 0 247px;
+}
+
+.mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-page-subtitle {
+  margin: 10px 0 0;
+}
+
+.mkdf-title-holder.mkdf-tagline-type.mkdf-title-va-center .mkdf-title-inner {
+  vertical-align: middle;
+  bottom: unset;
+}
+
+/* ==========================================================================
+   Standard Title type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Title styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=title-map.css.map */

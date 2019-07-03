@@ -1,0 +1,813 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Button shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-btn.mkdf-btn-large, .mkdf-btn.mkdf-btn-huge {
+    padding: 14px 26px;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Call To Action shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 680px) {
+  .mkdf-cta__arrow {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   clients Holder responsive shortcode style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-clients-grid-holder.mkdf-four-columns .mkdf-item-space {
+    width: 50%;
+  }
+  .mkdf-clients-grid-holder.mkdf-four-columns .mkdf-item-space:nth-child(3n+1) {
+    clear: none;
+  }
+  .mkdf-clients-grid-holder.mkdf-four-columns .mkdf-item-space:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-clients-grid-holder.mkdf-four-columns .mkdf-item-space {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-clients-grid-holder .mkdf-cc-link {
+    width: 100%;
+  }
+  .mkdf-clients-grid-holder .mkdf-cc-link img {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   clients Holder responsive shortcode style - end
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-colored-clients.mkdf-three-columns .mkdf-cc-item {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+  .mkdf-colored-clients.mkdf-three-columns .mkdf-cc-item:nth-child(2n+1) {
+    clear: none;
+  }
+  .mkdf-colored-clients.mkdf-three-columns .mkdf-cc-item:nth-child(2n+1) {
+    clear: both;
+  }
+  .mkdf-colored-clients.mkdf-four-columns .mkdf-cc-item {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+  .mkdf-colored-clients.mkdf-four-columns .mkdf-cc-item:nth-child(3n+1) {
+    clear: none;
+  }
+  .mkdf-colored-clients.mkdf-four-columns .mkdf-cc-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-colored-clients.mkdf-two-columns .mkdf-cc-item {
+    width: 100%;
+    display: inline-block;
+    float: left;
+  }
+  .mkdf-colored-clients.mkdf-three-columns .mkdf-cc-item {
+    width: 100%;
+    display: inline-block;
+    float: left;
+  }
+  .mkdf-colored-clients.mkdf-four-columns .mkdf-cc-item {
+    width: 100%;
+    display: inline-block;
+    float: left;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .mkdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-countdown .countdown-row .countdown-section .countdown-period {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-countdown .countdown-row.countdown-show4 .countdown-section, .mkdf-countdown .countdown-row.countdown-show5 .countdown-section, .mkdf-countdown .countdown-row.countdown-show6 .countdown-section {
+    width: 33.33333333333333%;
+  }
+  .mkdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-countdown .countdown-row.countdown-show4 .countdown-section, .mkdf-countdown .countdown-row.countdown-show5 .countdown-section, .mkdf-countdown .countdown-row.countdown-show6 .countdown-section {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Custom Font shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .mkdf-custom-font-holder.mkdf-disable-title-break br {
+    display: none;
+  }
+}
+
+.touch .mkdf-custom-font-holder .mkdf-cf-typed span {
+  display: inline;
+}
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1366px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+  .mkdf-elements-holder .mkdf-eh-item-content {
+    padding: 0 10px;
+  }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */
+/* Laptop */
+@media only screen and (max-width: 1440px) {
+  .mkdf-fullscreen-info.mkdf-fi-outro .mkdf-outro-img,
+  .mkdf-fullscreen-info.mkdf-fi-outro svg {
+    margin-bottom: 2vh;
+  }
+  .mkdf-fullscreen-info.mkdf-fi-outro .mkdf-btm-info-holder {
+    bottom: 8vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #mkdf-intro .mkdf-intro-inner {
+    padding-top: 0;
+  }
+}
+
+/* Landscape */
+@media only screen and (max-device-width: 812px) and (orientation: landscape) {
+  #mkdf-intro .mkdf-scroll-down {
+    display: none;
+  }
+  #mkdf-outro .mkdf-btm-info-holder,
+  #mkdf-outro .mkdf-outro-img,
+  #mkdf-outro svg {
+    display: none;
+  }
+  #mkdf-outro .mkdf-outro-img {
+    margin-bottom: 9vh;
+  }
+}
+
+/* Portrait */
+@media only screen and (max-device-width: 736px) and (orientation: portrait) {
+  #mkdf-outro .mkdf-btm-info-holder,
+  #mkdf-outro svg {
+    display: none;
+  }
+  #mkdf-outro .mkdf-outro-img {
+    display: block;
+    margin: 0 auto 9vh;
+    max-width: 80%;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-google-map-overlay {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - end
+   ========================================================================== */
+@media only screen and (max-width: 680px) {
+  .mkdf-int-icon-showcase .mkdf-int-icon-circle,
+  .mkdf-int-icon-showcase .mkdf-int-icon-showcase-inner {
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    margin: 30px;
+  }
+  .mkdf-int-icon-showcase .mkdf-showcase-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .mkdf-int-icon-showcase .mkdf-showcase-icon .mkdf-icon-shortcode {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+  }
+  .mkdf-int-icon-showcase .mkdf-showcase-content-inner {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-image-with-description .mkdf-pt-wrapper .mkdf-image-with-description-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-image-with-list .mkdf-pt-wrapper .mkdf-image-with-list-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+/* ==========================================================================
+   Line Graph shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1366px) {
+  .mkdf-line-graph-holder .mkdf-lg-legend {
+    margin: 39px 0 0 69px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-line-graph-holder .mkdf-lg-legend ul {
+    list-style: none;
+  }
+  .mkdf-line-graph-holder .mkdf-lg-legend ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .mkdf-line-graph-holder .mkdf-lg-legend ul li .mkdf-legend-item .mkdf-lg-item-color {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+/* ==========================================================================
+   Line Graph shortcode responsive style - end
+   ========================================================================== */
+@media only screen and (max-width: 680px) {
+  .mkdf-numbered-title-holder .mkdf-nt-line {
+    width: 34px !important;
+  }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode style responsive - begin
+   ========================================================================== */
+.mkdf-pricing-tables {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 1366px) {
+  .mkdf-pricing-tables.mkdf-three-columns .mkdf-pt-inner .mkdf-pt-inner-left, .mkdf-pricing-tables.mkdf-four-columns .mkdf-pt-inner .mkdf-pt-inner-left {
+    width: 60%;
+  }
+  .mkdf-pricing-tables.mkdf-three-columns .mkdf-pt-inner .mkdf-pt-inner-right .mkdf-pt-button .mkdf-btn.mkdf-btn-large {
+    padding: 15px 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-pricing-tables.mkdf-two-columns .mkdf-price-table, .mkdf-pricing-tables.mkdf-three-columns .mkdf-price-table, .mkdf-pricing-tables.mkdf-four-columns .mkdf-price-table {
+    width: 100%;
+  }
+  .mkdf-pricing-tables.mkdf-two-columns .mkdf-price-table .mkdf-pt-inner .mkdf-pt-inner-left, .mkdf-pricing-tables.mkdf-three-columns .mkdf-price-table .mkdf-pt-inner .mkdf-pt-inner-left, .mkdf-pricing-tables.mkdf-four-columns .mkdf-price-table .mkdf-pt-inner .mkdf-pt-inner-left {
+    width: 50%;
+  }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode style responsive - end
+   ========================================================================== */
+/* ==========================================================================
+   Process shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1366px) {
+  .mkdf-process-holder .mkdf-process-inner {
+    margin: 0 -35px;
+  }
+  .mkdf-process-holder .mkdf-process-inner .mkdf-process-item {
+    padding: 0 35px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-process-holder.mkdf-four-columns .mkdf-process-inner .mkdf-process-item {
+    width: 50%;
+    padding: 35px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-process-holder.mkdf-three-columns .mkdf-process-inner .mkdf-process-item {
+    width: 100%;
+    padding: 35px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-process-holder.mkdf-two-columns .mkdf-process-inner .mkdf-process-item, .mkdf-process-holder.mkdf-three-columns .mkdf-process-inner .mkdf-process-item, .mkdf-process-holder.mkdf-four-columns .mkdf-process-inner .mkdf-process-item {
+    width: 100%;
+    padding: 35px;
+  }
+  .mkdf-process-holder .mkdf-pi-content {
+    padding: 0 0 0 27px;
+  }
+}
+
+/* ==========================================================================
+   Process shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Section Title shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-section-title-holder.mkdf-st-two-columns {
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-section-title-holder {
+    padding: 0 !important;
+  }
+  .mkdf-section-title-holder.mkdf-st-two-columns .mkdf-st-title,
+  .mkdf-section-title-holder.mkdf-st-two-columns .mkdf-st-text {
+    width: 100%;
+    float: none !important;
+    text-align: initial !important;
+  }
+  .mkdf-section-title-holder.mkdf-st-two-columns .mkdf-st-text {
+    margin: 14px 0 0;
+  }
+  .mkdf-section-title-holder.mkdf-st-disable-title-break .mkdf-st-title br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Pricing Calculator shortcode start styles
+   ========================================================================== */
+@media only screen and (min-width: 1025px) {
+  .mkdf-sliding-image-holder .mkdf-sih-image-holder {
+    background-image: none !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-sliding-image-holder .mkdf-sih-image-holder {
+    background-position: center;
+  }
+  .mkdf-sliding-image-holder .mkdf-sliding-image-background-image {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Pricing Calculator shortcode end styles
+   ========================================================================== */
+/* ==========================================================================
+   Split Section responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 1366px) {
+  .mkdf-ss-holder.mkdf-ss-break-1366.mkdf-ss-image-right .mkdf-ss-image {
+    position: relative;
+    left: 0;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-1366 .mkdf-ss-content {
+    left: 0;
+    width: 100%;
+    padding: 25px;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-1366 .mkdf-ss-image {
+    position: relative;
+    width: 100%;
+    background-image: none !important;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-1366 .mkdf-ss-image img {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-ss-holder.mkdf-ss-break-1024.mkdf-ss-image-right .mkdf-ss-image {
+    position: relative;
+    left: 0;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-1024 .mkdf-ss-content {
+    left: 0;
+    width: 100%;
+    padding: 25px;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-1024 .mkdf-ss-image {
+    position: relative;
+    width: 100%;
+    background-image: none !important;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-1024 .mkdf-ss-image img {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-ss-holder.mkdf-ss-break-768.mkdf-ss-image-right .mkdf-ss-image {
+    position: relative;
+    left: 0;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-768 .mkdf-ss-content {
+    left: 0;
+    width: 100%;
+    padding: 25px;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-768 .mkdf-ss-image {
+    position: relative;
+    width: 100%;
+    background-image: none !important;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-768 .mkdf-ss-image img {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-ss-holder.mkdf-ss-break-680.mkdf-ss-image-right .mkdf-ss-image {
+    position: relative;
+    left: 0;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-680 .mkdf-ss-content {
+    left: 0;
+    width: 100%;
+    padding: 25px;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-680 .mkdf-ss-image {
+    position: relative;
+    width: 100%;
+    background-image: none !important;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-680 .mkdf-ss-image img {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-ss-holder.mkdf-ss-break-480.mkdf-ss-image-right .mkdf-ss-image {
+    position: relative;
+    left: 0;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-480 .mkdf-ss-content {
+    left: 0;
+    width: 100%;
+    padding: 25px;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-480 .mkdf-ss-image {
+    position: relative;
+    width: 100%;
+    background-image: none !important;
+  }
+  .mkdf-ss-holder.mkdf-ss-break-480 .mkdf-ss-image img {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Split Section responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li a {
+    padding: 7px 21px;
+  }
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li {
+    margin: 0 8px 0 0;
+  }
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li a {
+    padding: 7px 18px;
+  }
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+    margin: 0 26px 0 0;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav {
+    width: 180px;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tab-container {
+    width: calc(100% - 180px);
+    padding: 0 0 0 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+  }
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li a {
+    width: 100%;
+  }
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 8px;
+  }
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li a {
+    width: 100%;
+  }
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+    margin: 0 20px 0 0;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav,
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tab-container {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav {
+    border-right: 0;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li {
+    float: left;
+    margin: 0 20px 0 0;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tab-container {
+    padding: 31px 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav {
+    padding: 0 0 20px;
+  }
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  body.mkdf-vss-initialized {
+    overflow-y: visible !important;
+    height: auto !important;
+  }
+  .mkdf-vertical-split-slider,
+  #multiscroll-nav {
+    display: none;
+  }
+  .mkdf-vss-responsive {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/holmes-core/assets/css/shortcodes-map-responsive.css.map */

@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Image With description shortcode style - begin
+   ========================================================================== */
+
+.mkdf-image-with-description{
+    .mkdf-image-with-description-item{
+        .mkdf-iwd-image-holder{
+            position: relative;
+
+            img{
+                display: block;
+            }
+        }
+
+        .mkdf-iwd-content-holder{
+            display: table;
+            width: 100%;
+            padding: 44px 53px 45px;
+            background-color: #fff;
+            box-sizing: border-box;
+
+            .mkdf-iwd-col-1,
+            .mkdf-iwd-col-2{
+                display: table-cell;
+                vertical-align: top;
+            }
+
+            .mkdf-iwd-col-1{
+                width: 44%;
+            }
+
+            .mkdf-iwd-col-2{
+                width: 56%;
+            }
+
+            @include phone-landscape{
+                .mkdf-iwd-col-1,
+                .mkdf-iwd-col-2{
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .mkdf-iwd-description{
+                margin: 8px 0 13px;
+                @include mkdfHeadingStyle(h6);
+            }
+
+            .mkdf-iwd-arrow{
+                svg{
+                    width: 26px;
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Image With description shortcode style - end
+   ========================================================================== */

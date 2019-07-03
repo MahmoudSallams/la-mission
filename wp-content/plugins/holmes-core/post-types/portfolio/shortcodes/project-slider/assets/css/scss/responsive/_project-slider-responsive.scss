@@ -1,0 +1,108 @@
+@include laptop-landscape-large() {
+    .mkdf-project-slider-holder {
+        $slider-width: 65%;
+        $text-width: 35%;
+
+        display: block;
+
+        .mkdf-project-slider-text-holder {
+            width: $text-width;
+            padding: 0 4.5% 0 4.5%;
+
+            .mkdf-ps-description {
+                margin-bottom: 55px;
+            }
+
+            .mikado-ps-custom-nav {
+                margin-top: 85px;
+            }
+        }
+
+        .mkdf-portfolio-list-holder {
+            width: $slider-width;
+            left: $text-width;
+            margin-bottom: 0;
+        }
+    }
+}
+
+//@include laptop-landscape-large() {
+//    .mkdf-project-slider-text-holder {
+//        padding: 0 83px 0;
+//    }
+//
+//    .mikado-ps-custom-nav {
+//        margin-top: 30px;
+//    }
+//}
+
+@include laptop-landscape-mac() {
+    .mkdf-project-slider-holder {
+        $slider-width: 65%;
+        $text-width: 35%;
+
+        display: block;
+
+        .mkdf-project-slider-text-holder {
+            width: $text-width;
+            padding: 0 4.5% 0 4.5%;
+
+            //.mkdf-ps-description {
+            //    margin-bottom: 55px;
+            //}
+
+            .mikado-ps-custom-nav {
+                margin-top: 35px;
+            }
+        }
+
+        .mkdf-portfolio-list-holder {
+            width: $slider-width;
+            left: $text-width;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include ipad-landscape() {
+    .mkdf-project-slider-holder {
+        display: block;
+
+        .mkdf-project-slider-text-holder {
+            width: 100%;
+            padding: 0 126px 65px 126px;
+            position: relative;
+
+            .mkdf-ps-description {
+                margin-bottom: 30px;
+            }
+
+            .mikado-ps-custom-nav {
+                display: none;
+            }
+        }
+
+        .mkdf-portfolio-list-holder {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+@include ipad-portrait() {
+    .mkdf-project-slider-holder {
+        .mkdf-project-slider-text-holder {
+            width: 100%;
+            padding: 0 85px 65px 85px;
+            position: relative;
+        }
+    }
+}
+
+@include phone-landscape() {
+    .mkdf-project-slider-holder {
+        .mkdf-project-slider-text-holder {
+            padding: 0 40px 79px 40px;
+        }
+    }
+}

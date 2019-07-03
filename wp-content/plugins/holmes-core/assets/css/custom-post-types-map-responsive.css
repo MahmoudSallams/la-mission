@@ -1,0 +1,251 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-masonry-gallery-holder .mkdf-mg-grid-sizer,
+  .mkdf-masonry-gallery-holder .mkdf-mg-item {
+    width: 50%;
+  }
+  .mkdf-masonry-gallery-holder .mkdf-mg-item.mkdf-masonry-size-large-width, .mkdf-masonry-gallery-holder .mkdf-mg-item.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-masonry-gallery-holder .mkdf-mg-grid-sizer,
+  .mkdf-masonry-gallery-holder .mkdf-mg-item {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Masonry Gallery shortcodes responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single page responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 680px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images .mkdf-ps-image {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-info-holder {
+    margin: 30px 0 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single page responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Interactive portfolio showcase shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .mkdf-ips .mkdf-ips-content-table-cell {
+    padding-left: 12%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .mkdf-ips .mkdf-ips-item-link:after {
+    border-bottom-width: 10px;
+    bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-ips .mkdf-ips-item-link {
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-ips .mkdf-ips-item-link:after {
+    bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-ips .mkdf-ips-item-link:after {
+    border-bottom-width: 3px;
+    bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-ips .mkdf-ips-item-link:after {
+    bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-ips .mkdf-ips-content-holder {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-ips .mkdf-ips-image-holder {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-ips .mkdf-ips-item-image {
+    display: block;
+    opacity: 1;
+    position: relative;
+    height: 100vh;
+  }
+  .mkdf-ips .mkdf-ips-item-image img {
+    display: block;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-ips .mkdf-ips-item-content-copy {
+    display: block;
+    left: 5%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+/* ==========================================================================
+   Interactive portfolio showcase shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Product Pair shortcode responsive styles - begin
+   ========================================================================== */
+.mkdf-portfolio-pair-holder {
+  position: relative;
+  display: table;
+}
+
+@media only screen and (max-width: 1366px) {
+  .mkdf-portfolio-pair-holder {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-portfolio-pair-holder .mkdf-ppi {
+    display: inline-block;
+    margin-bottom: 47px;
+    width: 100%;
+  }
+  .mkdf-portfolio-pair-holder .mkdf-ppi .mkdf-ppi-inner {
+    float: none !important;
+  }
+}
+
+/* ==========================================================================
+   Product Pair shortcode responsive styles - end
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .mkdf-project-slider-holder {
+    display: block;
+  }
+  .mkdf-project-slider-holder .mkdf-project-slider-text-holder {
+    width: 35%;
+    padding: 0 4.5% 0 4.5%;
+  }
+  .mkdf-project-slider-holder .mkdf-project-slider-text-holder .mkdf-ps-description {
+    margin-bottom: 55px;
+  }
+  .mkdf-project-slider-holder .mkdf-project-slider-text-holder .mikado-ps-custom-nav {
+    margin-top: 85px;
+  }
+  .mkdf-project-slider-holder .mkdf-portfolio-list-holder {
+    width: 65%;
+    left: 35%;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .mkdf-project-slider-holder {
+    display: block;
+  }
+  .mkdf-project-slider-holder .mkdf-project-slider-text-holder {
+    width: 35%;
+    padding: 0 4.5% 0 4.5%;
+  }
+  .mkdf-project-slider-holder .mkdf-project-slider-text-holder .mikado-ps-custom-nav {
+    margin-top: 35px;
+  }
+  .mkdf-project-slider-holder .mkdf-portfolio-list-holder {
+    width: 65%;
+    left: 35%;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-project-slider-holder {
+    display: block;
+  }
+  .mkdf-project-slider-holder .mkdf-project-slider-text-holder {
+    width: 100%;
+    padding: 0 126px 65px 126px;
+    position: relative;
+  }
+  .mkdf-project-slider-holder .mkdf-project-slider-text-holder .mkdf-ps-description {
+    margin-bottom: 30px;
+  }
+  .mkdf-project-slider-holder .mkdf-project-slider-text-holder .mikado-ps-custom-nav {
+    display: none;
+  }
+  .mkdf-project-slider-holder .mkdf-portfolio-list-holder {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-project-slider-holder .mkdf-project-slider-text-holder {
+    width: 100%;
+    padding: 0 85px 65px 85px;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-project-slider-holder .mkdf-project-slider-text-holder {
+    padding: 0 40px 79px 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-testimonials-holder .mkdf-testimonials-holder-outer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .mkdf-testimonials-holder .mkdf-testimonal-nav-prev,
+  .mkdf-testimonials-holder .mkdf-testimonal-nav-next {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-testimonials-holder #mkdf-testimonial-pagination {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/holmes-core/assets/css/custom-post-types-map-responsive.css.map */

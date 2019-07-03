@@ -1,0 +1,384 @@
+/* ==========================================================================
+   Portfolio shortcode style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-list-holder {
+    @include mkdfRelativeHolderLayout();
+
+    /***** Article Global Style - begin *****/
+
+    article {
+        .touch & {
+            cursor: pointer;
+        }
+
+        .mkdf-pl-item-inner {
+            @include mkdfRelativeHolderLayout();
+        }
+
+        .mkdf-pli-image {
+            @include mkdfRelativeHolderLayout();
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .mkdf-pli-link {
+            @include mkdfAbsoluteHolderLayout();
+        }
+
+        .mkdf-pli-text-wrapper {
+            @include mkdfTableLayout();
+        }
+
+        .mkdf-pli-text {
+            @include mkdfTableCellLayout();
+
+            .mkdf-pli-title {
+                margin: 0;
+            }
+
+            .mkdf-pli-category-holder {
+                display: block;
+                line-height: 1em;
+                margin: 3px 0 0;
+                position: relative;
+
+                a {
+                    @include mkdfHeadingStyle(h6);
+
+                    display: inline-block;
+                    position: relative;
+                    vertical-align: middle;
+                    z-index: 8;
+
+                    &:after {
+                        color: inherit;
+                        content: ',';
+                        line-height: inherit;
+                        //position: absolute;
+                        //top: 0;
+                    }
+
+                    &:last-child {
+                        margin: 0;
+                        padding: 0;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        color: $first-main-color;
+                    }
+                }
+            }
+
+            .mkdf-pli-excerpt {
+                margin: 3px 0 0;
+            }
+        }
+    }
+
+    /***** Article Global Style - end *****/
+
+    /***** Specific Global Style - begin *****/
+
+    &.mkdf-pl-has-shadow {
+        article {
+            .mkdf-pli-image {
+                box-shadow: $default-box-shadow;
+            }
+        }
+    }
+
+    &.mkdf-pl-has-filter {
+        .mkdf-pl-inner {
+            overflow: hidden;
+        }
+    }
+
+    &.mkdf-pl-no-content {
+        .mkdf-pli-text-holder {
+            display: none;
+        }
+    }
+
+    /***** Specific Global Style - end *****/
+
+    &.mkdf-pl-masonry {
+        &.mkdf-fixed-masonry-items {
+            article {
+                .mkdf-pl-item-inner,
+                .mkdf-pli-image {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    /***** Portfolio Types - end *****/
+
+    /***** Additional Features - begin *****/
+
+    &.mkdf-pl-has-animation {
+        article {
+            opacity: 0;
+
+            @include mkdfTransform(translateY(80px));
+            @include mkdfTransition(opacity .8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform .8s cubic-bezier(0.34, 0.52, 0.57, 1.04));
+
+            &.mkdf-item-show {
+                opacity: 1;
+
+                @include mkdfTransform(translateY(0));
+
+                &.mkdf-item-shown {
+                    @include mkdfTransition(none);
+                }
+            }
+
+            .touch & {
+                opacity: 1;
+
+                @include mkdfTransform(translateY(0));
+            }
+        }
+    }
+
+    /***** Additional Features - end *****/
+}
+
+/* ==========================================================================
+   Portfolio shortcode style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio filter style - begin
+   ========================================================================== */
+
+.mkdf-pl-filter-holder {
+    @include mkdfRelativeHolderLayout();
+
+    margin: 0 0 50px;
+    text-align: left;
+
+    ul {
+        display: inline-block;
+        left: -22px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        vertical-align: middle;
+
+        @include ipad-landscape() {
+            left: -15px;
+        }
+
+        li {
+            cursor: pointer;
+            display: inline-block;
+            margin: 0 0 10px;
+            padding: 0 20px;
+            position: relative;
+            vertical-align: middle;
+
+            &:last-child {
+                top: 10px;
+            }
+
+            &:not(:last-child) {
+                &:after {
+                    content: '/';
+
+                    @include mkdfHeadingStyle(h1);
+
+                    left: 15px;
+                    position: relative;
+                    top: 12px;
+                }
+            }
+
+            @include laptop-landscape-large() {
+                padding: 0 16px;
+            }
+
+            @include ipad-landscape() {
+                padding: 0 10px;
+            }
+
+            @include ipad-portrait() {
+                &:last-child {
+                    top: 0 !important;
+                }
+
+                &:after {
+                    font-size: 20px !important;
+                    left: 10px !important;
+                    top: 0 !important;
+                }
+
+                span {
+                    font-size: 35px !important;
+                }
+
+                sup {
+                    bottom: 10px !important;
+                    font-size: 12px !important;
+                }
+            }
+
+            @include phone-landscape() {
+                span {
+                    font-size: 24px !important;
+                }
+            }
+
+            span {
+                color: $default-heading-color;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+
+                @include mkdfHeadingStyle(h1);
+                @include mkdfTransition(color .2s ease-out);
+            }
+
+            sup {
+                @include mkdfHeadingStyle(h5);
+
+                bottom: 22px;
+                left: 6px;
+            }
+
+            &.mkdf-pl-current,
+            &:hover {
+                span {
+                    color: $first-main-color;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio filter style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio standard pagination style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-list-holder {
+    &.mkdf-pl-pag-standard {
+        .mkdf-pl-inner {
+            opacity: 1;
+
+            @include mkdfTransition(opacity .2s ease-out);
+        }
+
+        &.mkdf-pl-pag-standard-animate {
+            .mkdf-pl-inner {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.mkdf-pl-standard-pagination {
+    @include mkdfStandardPaginationStyle('shortcode');
+}
+
+/* ==========================================================================
+   Portfolio standard pagination style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio load more pagination style - begin
+   ========================================================================== */
+
+.mkdf-pl-load-more-holder {
+    @include mkdfRelativeHolderLayout();
+
+    .mkdf-pl-load-more {
+        margin: 60px 0 0;
+        text-align: center;
+    }
+}
+
+/* ==========================================================================
+   Portfolio load more pagination style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio loading element style - begin
+   ========================================================================== */
+
+.mkdf-pl-loading {
+    color: $default-heading-color;
+    display: none;
+    margin: 40px 0 20px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    &.mkdf-filter-trigger {
+        left: 0;
+        position: absolute;
+        top: 350px;
+    }
+
+    &.mkdf-standard-pag-trigger {
+        left: 0;
+        position: absolute;
+        top: 50px;
+
+        .mkdf-pl-has-filter & {
+            top: 150px;
+        }
+    }
+
+    &.mkdf-showing {
+        display: block;
+    }
+
+    > div {
+        background-color: $default-heading-color;
+        border-radius: 100%;
+        display: inline-block;
+        height: 14px;
+        margin: 0 3px;
+        position: relative;
+        vertical-align: middle;
+        width: 14px;
+
+        @include mkdfAnimation(mkdf-umlaut 1s $main-easing infinite both);
+    }
+
+    .mkdf-pl-loading-bounce2 {
+        -webkit-animation-delay: -0.7s;
+        animation-delay: -0.7s;
+    }
+}
+
+@include keyframes(mkdf-umlaut) {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ==========================================================================
+   Portfolio loading element style - end
+   ========================================================================== */

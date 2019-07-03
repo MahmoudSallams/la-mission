@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Product Pair shortcode responsive styles - begin
+   ========================================================================== */
+
+.mkdf-portfolio-pair-holder {
+    position: relative;
+    display: table;
+
+    @include laptop-landscape-mac() {
+        margin: 0 auto;
+    }
+
+    @include ipad-portrait() {
+        .mkdf-ppi {
+            display: inline-block;
+            margin-bottom: 47px;
+            width: 100%;
+
+            .mkdf-ppi-inner {
+                float: none !important;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Product Pair shortcode responsive styles - end
+   ========================================================================== */

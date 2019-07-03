@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Linkable list shortcode style - begin
+   ========================================================================== */
+
+.mkdf-linkable-list-holder {
+    .mkdf-ll-title {
+        margin-bottom: 29px;
+    }
+    ul {
+        list-style: none;
+
+        li {
+            position: relative;
+            border-bottom: 1px dotted #000;
+            padding: 12px 0;
+            &:last-child {
+                border-bottom: none;
+            }
+
+            i {
+                font-size: 14px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                @include mkdfTransform(translateY(-50%))
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Linkable list shortcode style - end
+   ========================================================================== */

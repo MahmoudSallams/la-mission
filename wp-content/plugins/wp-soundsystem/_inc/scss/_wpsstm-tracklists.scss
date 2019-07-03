@@ -1,0 +1,249 @@
+@import "compass";
+
+wpsstm-tracklist{
+    display:block;
+    position:relative;
+    margin:auto;
+    .wpsstm-tracks-list{
+        position:relative;
+        padding:0;
+        margin:0;
+        list-style: none;
+        width:100%;
+    }
+    .wpsstm-tracklist-notices{
+        position:relative;
+        margin:auto;
+        padding: .5em 0;
+        list-style: none!important;
+        margin: 0 !important;
+    }
+    
+    &.wpsstm-post-tracklist{
+        
+        .wpsstm-tracklist-actions{
+            display:block;
+            list-style: none;
+            line-height: 2.8em;
+            text-align:center;
+            margin-top:1em;
+
+            .wpsstm-tracklist-action{
+                padding: .25em .5em;
+                font-size:.8em;
+                border: 1px solid #F7F7F7;
+                line-height: 1.8em;
+                
+                &:hover{
+                    border-color:#F7F7F7;
+                    background:rgba(0, 0, 0, .025);
+                }
+                
+            }
+        }
+    }
+    
+    &.tracklist-expired{
+        .wpsstm-reload-bt{
+            animation: opacityPulse 1s linear infinite;
+            @extend .wpsstm-can-click;
+        }
+    }
+
+    .tracklist-header{
+        margin-bottom:1em;
+        font-size:.9em;
+        text-align:center;
+
+        .wpsstm-live-tracklist-icon{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2em;
+            height: 2em;
+            background: #efef90;
+            border-radius: 50%;
+            @extend .wpsstm-align-both;
+            > *{
+                font-size:.5em;
+            }
+        }
+        
+        .wpsstm-tracklist-title{
+            font-size:1.5em;
+            text-align: center;
+        }
+        
+        p{
+            padding:0;
+            margin:0;
+        }
+
+        .wpsstm-live-tracklist-link{
+            
+            display:block;
+            @extend .wpsstm-no-underline;
+        }
+        
+        .wpsstm-tracklist-refresh-time{
+            @include opacity(.25);
+        }
+    }
+
+    &.tracklist-reloading{
+        @extend .wpsstm-freeze;
+        @include striped-bg();
+        min-height:1em;
+        > *{
+            @include opacity(.25);
+        }
+    } 
+
+    &:not(.tracklist-expired){
+        .wpsstm-tracklist-action-refresh{
+            @include opacity(.5);
+        }
+    }
+    
+    &.favorited-tracklist{
+        .wpsstm-tracklist-action.action-favorite{
+            display:none;
+        }
+    }
+    &:not(.favorited-tracklist){
+        .wpsstm-tracklist-action.action-unfavorite{
+            display:none;
+        }
+    }
+    
+    .wpsstm-new-subtrack{
+        margin: 1em 0;
+        padding: 1em;
+        
+        label{
+            margin-bottom:1em;
+            display:block;
+        }
+        
+        .wpsstm-new-subtrack-fields{
+            @extend .wpsstm-align-both;
+            > * {
+                margin: 0 .5em;
+            }
+        }
+
+        &.wpsstm-new-subtrack-simple{
+            label{
+                display:none;
+            }
+            .wpsstm-new-subtrack-fields > *:not(button){
+                display:none;
+            }
+        }
+        &:not(.wpsstm-new-subtrack-simple){
+            background: #fcf8e3;
+            button span{
+                display:none;
+            }
+        }
+        
+        &.action-loading{
+            @extend .wpsstm-freeze;
+            @include striped-bg();
+            > *{
+                @include opacity(.25);
+            }
+        }
+        
+        &.action-error{
+            border:1px solid red;
+        }
+
+    }
+
+}
+
+.wpsstm-tracklist-actions{
+
+    .wpsstm-tracklist-action{
+        &.wpsstm-tracklist-action-refresh a:before,
+        &.wpsstm-tracklist-action-import a:before{
+            content:"\f021";//.fa-refresh;
+        }
+        &.wpsstm-tracklist-action-share a:before{
+            content:"\f1e0";//.fa-share-alt;
+        }
+        &.wpsstm-tracklist-action-export a:before{
+            content:"\f019";//.fa-download;
+        }
+
+        &.wpsstm-tracklist-action-new-subtrack{
+             a:before{
+                 content:"\f055";//.fa-plus-circle;
+            }
+        }
+        &.wpsstm-tracklist-action-live,
+        &.wpsstm-tracklist-action-static{
+            a:before{
+                content:"\f09e";//.fa-rss;
+            }
+            &.wpsstm-tracklist-action-live{
+                a:before{
+                    @include opacity(.25);
+                }
+            }
+        }
+        &.wpsstm-tracklist-action-edit-backend a:before{
+            content:"\f084";//.fa-key;
+        }
+        &.wpsstm-tracklist-action-trash a:before{
+            content: "\f1f8";//.fa-trash;
+        }
+    }
+
+}
+
+ul.tracklist-list{
+    > li{
+        border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+        @include display-flex();
+        height: 1em;
+        padding: 1em 0;
+        > *{
+            @include display-flex();
+            @include flex-grow(1);
+            align-items: center;
+            padding: 0 .25em;
+            box-sizing: border-box;
+            max-width:50%;
+            &.wpsstm-tracklist-title{
+                a{
+                    @extend .wpsstm-ellipsis;
+                }
+                .wpsstm-tracklist-post-state{
+                    &.wpsstm-tracklist-post-state-publish{
+                        display:none;
+                    }
+                }
+            }
+            &.wpsstm-tracklist-actions{
+                @include justify-content(space-between);
+                @include flex-grow(0);
+                @include flex-shrink(0);
+                text-align:right;
+                visibility:hidden;
+                ul{
+                    li{
+                        @extend .wpsstm-action-icon;
+                    }
+                }
+            }
+        }
+        &:hover{
+            .wpsstm-tracklist-actions{
+                visibility:visible;
+            }
+        }
+
+    }
+}

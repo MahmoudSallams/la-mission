@@ -1,0 +1,206 @@
+/* ==========================================================================
+   Portfolio Single page style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-single-holder {
+    @include mkdfRelativeHolderLayout();
+
+    margin: 15px 0 $ps-large-distance;
+
+    &.mkdf-ps-full-width-custom-layout {
+        margin: 0;
+    }
+
+    .mkdf-ps-image-holder {
+        @include mkdfRelativeHolderLayout();
+
+        .mkdf-ps-image {
+            &:not(.mkdf-item-space) {
+                @include mkdfRelativeHolderLayout();
+
+                box-sizing: border-box;
+            }
+
+            a, img {
+                position: relative;
+                display: block;
+            }
+        }
+    }
+
+    .mkdf-ps-info-holder {
+        margin-top: $ps-small-distance;
+    }
+
+    .mkdf-portfolio-single-holder-inner {
+        border-bottom: 1px dotted #000000;
+        margin-bottom: $ps-large-distance;
+        padding-bottom: $ps-large-distance;
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // small media
+
+    &.mkdf-ps-small-gallery-layout,
+    &.mkdf-ps-small-images-layout,
+    &.mkdf-ps-small-masonry-layout,
+    &.mkdf-ps-small-slider-layout {
+        .mkdf-ps-content-holder,
+        .mkdf-ps-info-holder {
+            padding-left: 7%;
+
+            @include ipad-landscape() {
+                padding-left: 0;
+            }
+        }
+
+        .mkdf-ps-content-holder {
+            @include ipad-landscape() {
+                margin-top: $ps-small-distance;
+            }
+        }
+
+        .mkdf-ps-info-holder {
+            border-top: 1px dotted #000000;
+            padding-top: $ps-small-distance;
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // big media
+
+    &.mkdf-ps-gallery-layout,
+    &.mkdf-ps-images-layout,
+    &.mkdf-ps-masonry-layout,
+    &.mkdf-ps-slider-layout {
+        .mkdf-ps-image-holder {
+            padding-bottom: $ps-large-distance;
+        }
+
+        .mkdf-ps-content-holder {
+            padding-left: 12%;
+
+            @include ipad-landscape() {
+                padding-left: 0;
+            }
+        }
+
+        .mkdf-ps-info-holder {
+            border-left: 1px dotted #000000;
+            margin-left: 10%;
+            padding-left: 10%;
+
+            @include ipad-landscape() {
+                border-left: none;
+                margin-left: 0;
+                padding-left: 0;
+            }
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // like
+
+    .mkdf-portfolio-like {
+        margin-top: $ps-small-distance;
+
+        span {
+            @include mkdfHeadingStyle(h6);
+
+            margin-left: 6px;
+            bottom: 3px;
+            position: relative;
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // portfolio info
+
+    .mkdf-ps-info-holder {
+        @include mkdfRelativeHolderLayout();
+
+        .mkdf-ps-info-item {
+            @include mkdfRelativeHolderLayout();
+
+            line-height: 25px;
+            margin: 0 0 14px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            .mkdf-ps-info-title,
+            .mkdf-social-title {
+                display: inline-block;
+                margin: 0 28px 0 0;
+                min-width: 60px;
+                line-height: inherit;
+
+                @include mkdfHeadingStyle(h6);
+            }
+
+            p, a {
+                @include mkdfHeadingStyle(h5);
+
+                margin: 0;
+                display: inline-block;
+            }
+
+            a:hover {
+                color: $first-main-color;
+            }
+
+            .mkdf-ps-info-category {
+                &:after {
+                    content: ',';
+                }
+
+                &:last-child:after {
+                    display: none;
+                }
+            }
+
+            .mkdf-social-share-holder.mkdf-text li {
+                margin-bottom: 0;
+                bottom: 2px;
+            }
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // back button
+
+    .mkdf-ps-back-btn {
+        text-align: center;
+
+        @include phone-portrait() {
+            a {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio Single page style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio Single page specific style for types - begin
+   ========================================================================== */
+
+.mkdf-portfolio-single-holder {
+    .mkdf-ps-image-holder {
+        &.mkdf-grid-masonry-list {
+            .mkdf-ps-image {
+                a {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio Single page specific style for types - end
+   ========================================================================== */

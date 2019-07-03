@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Pricing Calculator shortcode start styles
+   ========================================================================== */
+
+@media only screen and (min-width: 1025px) {
+    .mkdf-sliding-image-holder {
+        .mkdf-sih-image-holder {
+            background-image: none !important; // use inline background only mobile devices
+        }
+    }
+}
+
+@include ipad-landscape() {
+    .mkdf-sliding-image-holder {
+        .mkdf-sih-image-holder {
+            background-position: center;
+        }
+
+        .mkdf-sliding-image-background-image {
+            display: none;
+        }
+    }
+}
+
+/* ==========================================================================
+   Pricing Calculator shortcode end styles
+   ========================================================================== */

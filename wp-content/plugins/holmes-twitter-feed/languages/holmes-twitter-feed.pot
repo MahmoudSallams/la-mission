@@ -1,0 +1,143 @@
+# Copyright (C) 2019 Mikado Themes
+# This file is distributed under the same license as the Holmes Twitter Feed plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Holmes Twitter Feed 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/holmes-twitter-feed\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-03-05T11:33:21+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.1.0\n"
+"X-Domain: holmes-twitter-feed\n"
+
+#. Plugin Name of the plugin
+msgid "Holmes Twitter Feed"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin that adds Twitter feed functionality to our theme"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mikado Themes"
+msgstr ""
+
+#: lib/holmes-twitter-api.php:243
+#: lib/holmes-twitter-api.php:310
+#: lib/holmes-twitter-api.php:376
+msgid "Internal WP error"
+msgstr ""
+
+#: lib/holmes-twitter-api.php:259
+msgid "Redirect URL couldn\\t not be generated"
+msgstr ""
+
+#: lib/holmes-twitter-api.php:266
+msgid "Couldn't connect with Twitter API"
+msgstr ""
+
+#: lib/holmes-twitter-api.php:322
+msgid "Access token obtained"
+msgstr ""
+
+#: lib/holmes-twitter-api.php:327
+msgid "Authorize token and it's secret were not obtainer"
+msgstr ""
+
+#: lib/holmes-twitter-api.php:386
+msgid "Couldn't connect with Twitter"
+msgstr ""
+
+#: lib/holmes-twitter-api.php:391
+msgid "It seams like you haven\\t connected with your Twitter account"
+msgstr ""
+
+#: lib/holmes-twitter-api.php:401
+msgid "Couldn't retreive content from database"
+msgstr ""
+
+#: lib/holmes-twitter-helper.php:88
+msgid "ago"
+msgstr ""
+
+#: shortcodes/twitter-list/holder.php:20
+#: widgets/holmes-twitter-widget.php:203
+msgid "It seams that you haven't connected with your Twitter account"
+msgstr ""
+
+#: shortcodes/twitter-list/twitter-list.php:24
+msgid "Twitter List"
+msgstr ""
+
+#: shortcodes/twitter-list/twitter-list.php:26
+msgid "by HOLMES"
+msgstr ""
+
+#: shortcodes/twitter-list/twitter-list.php:33
+#: widgets/holmes-twitter-widget.php:40
+msgid "User ID"
+msgstr ""
+
+#: shortcodes/twitter-list/twitter-list.php:39
+msgid "Number of Columns"
+msgstr ""
+
+#: shortcodes/twitter-list/twitter-list.php:46
+msgid "Space Between Columns"
+msgstr ""
+
+#: shortcodes/twitter-list/twitter-list.php:52
+#: widgets/holmes-twitter-widget.php:45
+msgid "Number of Tweets"
+msgstr ""
+
+#: shortcodes/twitter-list/twitter-list.php:57
+#: widgets/holmes-twitter-widget.php:68
+msgid "Tweets Cache Time"
+msgstr ""
+
+#: widgets/holmes-twitter-widget.php:12
+msgid "Holmes Twitter Widget"
+msgstr ""
+
+#: widgets/holmes-twitter-widget.php:14
+msgid "Display your Twitter feed"
+msgstr ""
+
+#: widgets/holmes-twitter-widget.php:26
+msgid "Title"
+msgstr ""
+
+#: widgets/holmes-twitter-widget.php:31
+msgid "Type"
+msgstr ""
+
+#: widgets/holmes-twitter-widget.php:33
+msgid "Standard"
+msgstr ""
+
+#: widgets/holmes-twitter-widget.php:34
+msgid "Slider"
+msgstr ""
+
+#: widgets/holmes-twitter-widget.php:50
+msgid "Show Tweet Icon"
+msgstr ""
+
+#: widgets/holmes-twitter-widget.php:52
+#: widgets/holmes-twitter-widget.php:62
+msgid "Yes"
+msgstr ""
+
+#: widgets/holmes-twitter-widget.php:53
+#: widgets/holmes-twitter-widget.php:61
+msgid "No"
+msgstr ""
+
+#: widgets/holmes-twitter-widget.php:59
+msgid "Show Tweet Time"
+msgstr ""

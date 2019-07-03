@@ -1,0 +1,87 @@
+/* ==========================================================================
+# Team carousel - begin
+	========================================================================== */
+
+.mkdf-team-carousel-holder {
+    .mkdf-tc-image-slider {
+        .mkdf-tc-image {
+            padding: 0 38px;
+            position: relative;
+            cursor: pointer;
+            box-sizing: border-box;
+
+            img {
+                border-radius: 50%;
+                position: relative;
+
+                -webkit-filter: grayscale(100%);
+                /* Safari 6.0 - 9.0 */
+                filter: grayscale(100%);
+
+                @include mkdfTransition(1s $main-easing);
+
+                @include ipad-portrait() {
+                    margin: 0 auto;
+                    width: 75%;
+                }
+            }
+        }
+
+        .owl-item {
+            &.center {
+                .mkdf-tc-image {
+                    img {
+                        -webkit-filter: none;
+                        filter: none;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            img {
+                -webkit-filter: grayscale(100%) !important;
+                /* Safari 6.0 - 9.0 */
+                filter: grayscale(100%) !important;
+            }
+        }
+
+        .mkdf-tc-image:hover {
+            img {
+                -webkit-filter: none !important;
+                filter: none !important;
+            }
+        }
+    }
+
+    .mkdf-tc-text-slider {
+        .mkdf-tc-text {
+            text-align: center;
+            padding: 0 60px;
+            box-sizing: border-box;
+
+            @include ipad-landscape() {
+                padding: 0;
+            }
+
+            .mkdf-tc-text-subitle {
+                margin-top: 47px;
+            }
+
+            .mkdf-tc-text-title,
+            .mkdf-tc-text-text {
+                margin-top: 32px;
+            }
+
+            @media only screen and (min-width: 1280px) {
+                .mkdf-tc-text-text {
+                    padding: 0 80px;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Team carousel - end
+	========================================================================== */

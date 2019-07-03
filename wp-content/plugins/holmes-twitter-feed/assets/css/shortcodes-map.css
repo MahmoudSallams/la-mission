@@ -1,0 +1,155 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+.mkdf-twitter-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.mkdf-twitter-list-holder .mkdf-twitter-list {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mkdf-twitter-list-holder .mkdf-tl-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mkdf-twitter-list-holder .mkdf-tli-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #ffffff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.mkdf-twitter-list-holder .mkdf-tli-inner:hover {
+  box-shadow: -2px 4px 13px 0 rgba(81, 137, 162, 0.05);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.mkdf-twitter-list-holder .mkdf-tli-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  border: 1px solid #f6f6f6;
+  box-sizing: border-box;
+  padding: 35px 23px;
+}
+
+.mkdf-twitter-list-holder .mkdf-twitter-content-top {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.mkdf-twitter-list-holder .mkdf-twitter-link-over {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mkdf-twitter-list-holder .mkdf-twitter-user {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding-right: 30px;
+}
+
+.mkdf-twitter-list-holder .mkdf-twitter-user .mkdf-twitter-image {
+  display: inline-block;
+  float: left;
+  height: 56px;
+  position: relative;
+  vertical-align: top;
+  width: 56px;
+}
+
+.mkdf-twitter-list-holder .mkdf-twitter-user .mkdf-twitter-image img {
+  border-radius: 50%;
+}
+
+.mkdf-twitter-list-holder .mkdf-twitter-user .mkdf-twitter-name {
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  padding-left: 15px;
+  position: relative;
+  vertical-align: top;
+  width: calc(100% - 56px);
+}
+
+.mkdf-twitter-list-holder .mkdf-twitter-user .mkdf-twitter-name * {
+  margin: 0;
+}
+
+.mkdf-twitter-list-holder .mkdf-twitter-icon {
+  color: #a8a8a8;
+  display: inline-block;
+  font-size: 24px;
+  position: absolute;
+  right: 3px;
+  text-align: right;
+  top: -7px;
+  vertical-align: top;
+  width: 20px;
+}
+
+.mkdf-twitter-list-holder .mkdf-tweet-text {
+  box-sizing: border-box;
+  padding-left: 12px;
+}
+
+.mkdf-twitter-list-holder .mkdf-tweet-text a {
+  color: #808080;
+  position: relative;
+  z-index: 2;
+}
+
+.mkdf-twitter-list-holder .mkdf-tweet-text a:hover {
+  color: #a8a8a8;
+}
+
+.mkdf-twitter-list-holder .mkdf-twitter-profile a {
+  color: #808080;
+  position: relative;
+  z-index: 2;
+}
+
+.mkdf-twitter-list-holder .mkdf-twitter-profile a:hover {
+  color: #a8a8a8;
+}
+
+/*# sourceMappingURL=../../../../plugins/holmes-twitter-feed/assets/css/shortcodes-map.css.map */

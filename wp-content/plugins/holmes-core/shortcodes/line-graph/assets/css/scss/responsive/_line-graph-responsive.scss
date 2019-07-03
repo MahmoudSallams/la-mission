@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Line Graph shortcode responsive style - begin
+   ========================================================================== */
+
+.mkdf-line-graph-holder {
+    @include laptop-landscape-mac() {
+        .mkdf-lg-legend {
+            margin: 39px 0 0 69px;
+        }
+    }
+
+    @include ipad-portrait() {
+        .mkdf-lg-legend {
+            ul {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    margin-right: 20px;
+
+                    .mkdf-legend-item .mkdf-lg-item-color {
+                        height: 35px;
+                        width: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Line Graph shortcode responsive style - end
+   ========================================================================== */

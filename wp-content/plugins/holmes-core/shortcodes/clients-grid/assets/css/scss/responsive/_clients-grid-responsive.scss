@@ -1,0 +1,41 @@
+/* ==========================================================================
+   clients Holder responsive shortcode style - begin
+   ========================================================================== */
+
+.mkdf-clients-grid-holder {
+    &.mkdf-four-columns {
+        @include ipad-landscape() {
+            .mkdf-item-space {
+                width: 50%;
+
+                &:nth-child(3n+1) {
+                    clear: none;
+                }
+
+                &:nth-child(2n+1) {
+                    clear: both;
+                }
+            }
+        }
+
+        @include phone-landscape() {
+            .mkdf-item-space {
+                width: 100%;
+            }
+        }
+    }
+
+    @include ipad-landscape() {
+        .mkdf-cc-link {
+            width: 100%;
+
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   clients Holder responsive shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,13 @@
+			@font-face {
+				font-family: 'akkurat';
+				font-style: normal;
+				src: url('/la-mission/wp-content/uploads/useanyfont/190328034943Akkurat.eot');
+				src: local('akkurat'), url('/la-mission/wp-content/uploads/useanyfont/190328034943Akkurat.eot') format('embedded-opentype'), url('/la-mission/wp-content/uploads/useanyfont/190328034943Akkurat.woff') format('woff');
+			}
+            
+            .akkurat{font-family: 'akkurat' !important;}
+            
+						body, h1, h2, h3, h4, h5, h6, p, blockquote, li, a{
+					font-family: 'akkurat' !important;
+				}
+		

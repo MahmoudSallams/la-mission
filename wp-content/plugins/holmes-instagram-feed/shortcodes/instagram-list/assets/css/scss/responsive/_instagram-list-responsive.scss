@@ -1,0 +1,93 @@
+@include laptop-landscape-large {
+    .mkdf-instagram-list-holder.mkdf-il-with-title{
+        .mkdf-instagram-carousel-text{
+            .mkdf-instagram-carousel-text-inner > h4 {
+                padding: 0 18%;
+            }
+        }
+    }
+}
+
+@include laptop-landscape-medium {
+
+    .mkdf-instagram-list-holder {
+        $columns_number: ('five','six');
+
+        @for $i from 0 to length($columns_number) {
+            &.mkdf-il-#{nth($columns_number,$i+1)}-columns {
+                $column_width: 100% / 3;
+
+                .mkdf-il-item {
+                    width: $column_width;
+                }
+
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    .mkdf-il-item {
+
+                        &:nth-child(3n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mkdf-instagram-carousel{
+            .owl-item{
+                .mkdf-il-item{
+                    width: 100%!important;
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+
+    .mkdf-instagram-list-holder {
+        $columns_number: ('three', 'four', 'five', 'six');
+
+        @for $i from 0 to length($columns_number) {
+            &.mkdf-il-#{nth($columns_number,$i+1)}-columns {
+
+                .mkdf-il-item {
+                    width: 50%;
+                }
+
+                @media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+                    .mkdf-il-item {
+
+                        &:nth-child(2n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.mkdf-il-with-title {
+            .mkdf-instagram-carousel-text {
+                display: none;
+            }
+        }
+
+        .mkdf-instagram-carousel-text {
+            + .mkdf-instagram-carousel {
+                width: calc(100% - 100px);
+                margin-left: 50px !important;
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+
+    .mkdf-instagram-list-holder {
+        
+        .mkdf-il-item {
+            width: 100% !important; // !important is set to override all other stronger selectors
+        }
+    }
+}

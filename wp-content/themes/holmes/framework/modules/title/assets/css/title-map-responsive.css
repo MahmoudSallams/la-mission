@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Title responsive styles - begin
+   ========================================================================== */
+/* ==========================================================================
+   Title responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .mkdf-title-holder {
+    height: auto !important;
+  }
+  .mkdf-title-holder.mkdf-has-bg-image {
+    height: auto !important;
+    background-image: none !important;
+  }
+  .mkdf-title-holder.mkdf-has-bg-image .mkdf-title-image {
+    display: block;
+  }
+  .mkdf-title-holder.mkdf-has-bg-image .mkdf-title-image img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .mkdf-title-holder.mkdf-has-bg-image .mkdf-title-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+  }
+  .mkdf-title-holder.mkdf-has-bg-image .mkdf-title-inner {
+    display: block;
+    height: auto;
+  }
+  .mkdf-title-holder .mkdf-title-wrapper {
+    height: 100% !important;
+    padding: 80px 0 !important;
+  }
+  .mkdf-title-holder.mkdf-title-va-top-header-bottom, .mkdf-title-holder.mkdf-title-va-top {
+    height: auto !important;
+  }
+  .mkdf-title-holder.mkdf-title-va-top-header-bottom .mkdf-title-inner, .mkdf-title-holder.mkdf-title-va-top .mkdf-title-inner {
+    padding-top: 0;
+    vertical-align: middle;
+  }
+  .mkdf-title-holder.mkdf-title-full-height {
+    height: calc(100vh - 70px) !important;
+  }
+  .mkdf-title-holder.mkdf-title-full-height .mkdf-title-image img {
+    height: calc(100vh - 70px) !important;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-title-holder .mkdf-title-wrapper {
+    padding: 40px 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Title responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard Title type style responsive - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .mkdf-title-holder.mkdf-standard-type .mkdf-title-text-wrapper .mkdf-page-title {
+    font-size: 34px;
+    line-height: 1.176em;
+    font-family: "Source Serif Pro", serif;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-title-holder.mkdf-standard-type .mkdf-title-text-wrapper .mkdf-page-title {
+    font-size: 26px;
+    line-height: 1.3em;
+    font-weight: 400;
+  }
+}
+
+/* ==========================================================================
+   Standard Title type style responsive - end
+   ========================================================================== */
+/* ==========================================================================
+   Standard Title type style responsive - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-page-title {
+    margin: 0 40px 0 125px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-page-title {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-page-title {
+    font-size: 34px;
+    line-height: 1.176em;
+    font-family: "Source Serif Pro", serif;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-page-title {
+    font-size: 38px;
+  }
+  .mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-numbered-title-holder {
+    display: block;
+  }
+  .mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-numbered-title-holder .mkdf-nt-title {
+    display: block;
+  }
+  .mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-numbered-title-holder .mkdf-nt-line {
+    display: none;
+  }
+  .mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper .mkdf-numbered-title-holder .mkdf-nt-text {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-title-holder.mkdf-tagline-type .mkdf-title-text-wrapper {
+    padding: 44px 20px;
+  }
+}
+
+/* ==========================================================================
+   Standard Title type style responsive - end
+   ========================================================================== */
+/* ==========================================================================
+   Title responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=title-map-responsive.css.map */

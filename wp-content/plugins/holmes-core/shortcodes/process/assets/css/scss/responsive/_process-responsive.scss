@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Process shortcode responsive style - begin
+   ========================================================================== */
+
+.mkdf-process-holder {
+    @include laptop-landscape-mac() {
+        .mkdf-process-inner {
+            margin: 0 -35px;
+
+            .mkdf-process-item {
+                padding: 0 35px;
+            }
+        }
+    }
+
+    @include laptop-landscape-medium() {
+        &.mkdf-four-columns {
+            .mkdf-process-inner {
+                .mkdf-process-item {
+                    width: 50%;
+                    padding: 35px;
+                }
+            }
+        }
+    }
+
+    @include ipad-portrait() {
+        &.mkdf-three-columns {
+            .mkdf-process-inner {
+                .mkdf-process-item {
+                    width: 100%;
+                    padding: 35px;
+                }
+            }
+        }
+    }
+
+    @include phone-landscape() {
+        &.mkdf-two-columns,
+        &.mkdf-three-columns,
+        &.mkdf-four-columns {
+            .mkdf-process-inner {
+                .mkdf-process-item {
+                    width: 100%;
+                    padding: 35px;
+                }
+            }
+        }
+
+        .mkdf-pi-content {
+            padding: 0 0 0 27px;
+        }
+    }
+}
+
+/* ==========================================================================
+   Process shortcode responsive style - end
+   ========================================================================== */

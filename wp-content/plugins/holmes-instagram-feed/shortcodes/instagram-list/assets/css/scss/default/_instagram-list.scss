@@ -1,0 +1,167 @@
+
+.mkdf-instagram-list-holder {
+    @include mkdfRelativeHolderLayout();
+    clear: both;
+    width: 100%;
+
+    &:not(.mkdf-il-one-column) {
+
+        .mkdf-il-item {
+            float: left;
+        }
+    }
+
+    &.mkdf-il-with-top-border {
+        padding-top: 42px;
+        border-top: 1px solid #f3f3f3;
+    }
+
+    &.mkdf-il-with-bottom-border {
+        padding-bottom: 42px;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+    &.mkdf-il-with-title {
+        .mkdf-instagram-carousel-text {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 15%;
+            height: 100%;
+
+            .mkdf-instagram-carousel-text-wrap {
+                display: table;
+                width: 100%;
+                height: 100%;
+            }
+
+            .mkdf-instagram-carousel-text-inner {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+
+                > span {
+                    font-size: 44px;
+                    letter-spacing: 0;
+                    color: $default-heading-color;
+                }
+
+                > h4 {
+                    font-weight: 400;
+                    box-sizing: border-box;
+                    padding: 0 20%;
+                    margin-top: 12px;
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+
+    .mkdf-instagram-carousel-text {
+        + .mkdf-instagram-carousel {
+            width: calc(85% - 50px);
+            margin-left: 15% !important;
+        }
+    }
+
+    .mkdf-instagram-carousel {
+
+        margin: 0 !important;
+
+        .mkdf-il-item {
+            width: auto !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            float: none !important;
+        }
+    }
+
+    .mkdf-il-item {
+        @include mkdfRelativeHolderLayout();
+
+        padding: 0;
+        box-sizing: border-box;
+
+        .mkdf-il-item-username {
+            position: absolute;
+            top: 20px;
+            left: 35px;
+            color: #fff;
+            font-family: $default-heading-font;
+            font-weight: 400;
+            font-size: 10px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            opacity: 0;
+
+            @include mkdfTransition(opacity .2s ease-in-out);
+
+            &:before {
+                content: '@';
+            }
+        }
+
+        .mkdf-il-item-text {
+            position: absolute;
+            top: 50%;
+            left: 35px;
+            color: #fff;
+            font-size: 18px;
+            padding-right: 32px;
+            opacity: 0;
+            box-sizing: border-box;
+
+            @include mkdfTransform(translateY(-50%));
+            @include mkdfTransition(opacity .2s ease-in-out);
+        }
+
+        &:hover {
+            .mkdf-il-item-username,
+            .mkdf-il-item-text {
+                opacity: 1;
+            }
+        }
+    }
+
+    $columns_number: ('two', 'three', 'four', 'five', 'six');
+
+    @for $i from 0 to length($columns_number) {
+        &.mkdf-il-#{nth($columns_number,$i+1)}-columns {
+
+            .mkdf-il-item {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 2) { // set different break point for four and five columns
+                @media only screen and (min-width: $laptop-landscape-medium-plus-pixel) {
+                    .mkdf-il-item {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else if ($i == 1) { // set different break point for three columns
+                @media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+                    .mkdf-il-item {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    .mkdf-il-item {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

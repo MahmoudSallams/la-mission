@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Pricing Tables shortcode style responsive - begin
+   ========================================================================== */
+$columns_label: ('two', 'three', 'four', 'five', 'six');
+
+.mkdf-pricing-tables {
+    @include mkdfRelativeHolderLayout();
+
+    @include laptop-landscape-mac{
+        &.mkdf-three-columns,
+        &.mkdf-four-columns{
+            .mkdf-pt-inner{
+                .mkdf-pt-inner-left{
+                    width: 60%;
+                }
+            }
+        }
+
+        &.mkdf-three-columns{
+            .mkdf-pt-inner{
+                .mkdf-pt-inner-right{
+                    .mkdf-pt-button{
+                        .mkdf-btn.mkdf-btn-large{
+                            padding: 15px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include ipad-landscape{
+
+        &.mkdf-two-columns,
+        &.mkdf-three-columns,
+        &.mkdf-four-columns{
+
+            .mkdf-price-table {
+                width: 100%;
+
+                .mkdf-pt-inner{
+                    .mkdf-pt-inner-left{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode style responsive - end
+   ========================================================================== */

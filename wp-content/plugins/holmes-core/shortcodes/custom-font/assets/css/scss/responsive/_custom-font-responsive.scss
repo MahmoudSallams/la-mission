@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Custom Font shortcode responsive styles - begin
+   ========================================================================== */
+
+@include ipad-portrait() {
+    .mkdf-custom-font-holder {
+        &.mkdf-disable-title-break {
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+.touch {
+    .mkdf-custom-font-holder {
+        .mkdf-cf-typed {
+            span {
+                display: inline;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - end
+   ========================================================================== */
+
+

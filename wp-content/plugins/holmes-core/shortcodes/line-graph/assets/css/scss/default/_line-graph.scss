@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Line Graph shortcode style - begin
+   ========================================================================== */
+
+.mkdf-line-graph-holder {
+    .mkdf-lg {
+        canvas {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+
+    .mkdf-lg-legend {
+        margin: 39px 0 0 83px;
+
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin-right: 50px;
+
+                .mkdf-legend-item {
+                    display: table;
+
+                    .mkdf-lg-item-color {
+                        width: 44px;
+                        height: 44px;
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+
+                    h5 {
+                        display: table-cell;
+                        vertical-align: middle;
+                        padding: 0 0 0 19px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Line Graph shortcode style - end
+   ========================================================================== */

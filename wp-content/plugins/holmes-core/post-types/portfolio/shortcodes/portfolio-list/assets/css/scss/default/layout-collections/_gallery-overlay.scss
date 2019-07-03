@@ -1,0 +1,174 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-list-holder {
+    &.mkdf-pl-gallery-overlay {
+        $distance: 27px;
+
+        &.mkdf-pl-has-shadow {
+            .mkdf-pl-item-inner {
+                box-shadow: $default-box-shadow;
+            }
+        }
+
+        article {
+            .mkdf-pl-item-inner {
+                overflow: hidden;
+            }
+
+            .mkdf-pli-text-holder {
+                display: inline-block;
+                box-sizing: border-box;
+                height: 100%;
+                left: $distance;
+                opacity: 0;
+                position: absolute;
+                text-align: left;
+                width: calc(100% - #{$distance * 2});
+                top: 0;
+                -webkit-clip-path: inset(0 0 0 100%);
+                clip-path: inset(0 0 0 100%);
+                -webkit-transition: opacity .2s .3s, -webkit-clip-path .0s .3s;
+                transition: opacity .2s .3s, clip-path .0s .3s;
+
+                .mkdf-pli-text-holder-inner {
+                    position: relative;
+                    display: table;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .mkdf-pli-text-wrapper {
+                    position: relative;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+
+            .mkdf-pli-text {
+                position: relative;
+                padding: $distance $distance 21px $distance;
+                box-sizing: border-box;
+                display: block;
+                height: auto;
+
+                @include laptop-landscape-mac() {
+                    padding: 27px 25px 15px;
+                }
+
+                @include phone-landscape() {
+                    padding: 15px 25px;
+                }
+
+                &:after {
+                    content: '';
+
+                    @include mkdfAbsoluteHolderLayout();
+
+                    background-color: #fff;
+
+                    @include mkdfTransformOrigin(0% 50%);
+                    @include mkdfTransform(scaleX(0));
+                    @include mkdfTransitionTransform(.35s $main-easing);
+
+                }
+
+                .mkdf-pli-title,
+                .mkdf-pli-excerpt {
+                    color: #000;
+                    position: relative;
+                    z-index: 10;;
+                }
+
+                .mkdf-pli-category-holder {
+                    margin: 38px 0 0;
+                    position: relative;
+                    z-index: 10;
+
+                    @include mkdfTransform(translateZ(0));
+                    @include phone-landscape() {
+                        display: none;
+                    }
+
+                    a {
+                        @include mkdfHeadingStyle(h6);
+
+                        color: #000;
+
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+
+                .mkdf-pli-title,
+                .mkdf-pli-excerpt,
+                .mkdf-pli-category-holder {
+                    opacity: 0;
+
+                    @include mkdfTransition(opacity .2s $main-easing);
+                }
+            }
+
+            &.mkdf-masonry-size-large-width-height {
+                .mkdf-pli-text {
+                    width: 50%;
+                    max-width: 350px;
+
+                    @include ipad-portrait() {
+                        width: 100%;
+                    }
+                }
+            }
+
+            @at-root .mkdf-pl-inner {
+                &:not(.mkdf-centered) article:hover,
+                &.mkdf-owl-slider.mkdf-centered:hover .active article {
+                    .mkdf-pli-text-holder {
+                        opacity: 1;
+                        -webkit-clip-path: inset(0 0 0 0);
+                        clip-path: inset(0 0 0 0);
+                        -webkit-transition: -webkit-clip-path .8s $main-easing;
+                        transition: clip-path .8s $main-easing;
+                    }
+
+                    .mkdf-pli-title,
+                    .mkdf-pli-excerpt,
+                    .mkdf-pli-category-holder {
+                        opacity: 1;
+                    }
+
+                    .mkdf-pli-text:after {
+                        @include mkdfTransformOrigin(100% 50%);
+                        @include mkdfTransform(scaleX(1));
+                        @include mkdfTransitionTransform(.7s $main-easing);
+                    }
+                }
+            }
+        }
+
+        &.mkdf-pli-hover-bottom {
+            display: block;
+
+            article .mkdf-pli-text-holder .mkdf-pli-text-wrapper {
+                vertical-align: bottom;
+                padding-bottom: $distance;
+
+                .mkdf-pli-text {
+                    display: inline-block;
+                    width: 78%;
+                    max-width: 281px;
+
+                    @include laptop-landscape-large() {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - end
+   ========================================================================== */

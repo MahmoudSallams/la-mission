@@ -1,0 +1,36 @@
+/*
+Popup, modals, etc.
+*/
+
+@import "compass";
+
+body.wpsstm-popup{
+    margin:.5em!important;
+    background:none!important;
+
+    &.wpsstm-tracklist-manager-popup{
+        
+        header{
+            padding: 1em;
+            text-align: center;
+            .wpsstm-track-info{
+                margin-bottom: 1em;
+            }
+        }
+        
+        form{
+            &#wpsstm-new-tracklist{
+                 margin:2em;
+            }
+            &#wpsstm-toggle-tracklists{
+                margin:1em;
+            }
+            button[type="submit"]{
+                margin: 1em auto;
+                display: block;
+            }
+        }
+        
+    }
+
+}

@@ -1,0 +1,21 @@
+/*Chrome*/
+::-webkit-scrollbar-track {
+    /*border: 1px solid #c1c1c1;*/
+    border: none;
+    background-color: #c1c1c1;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #c1c1c1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+/*Firefox*/
+html {
+    scrollbar-color: #000000 #c1c1c1;
+    scrollbar-width: thin;
+}

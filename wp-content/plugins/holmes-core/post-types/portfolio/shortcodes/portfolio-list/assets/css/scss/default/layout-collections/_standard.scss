@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Portfolio Item Layout - Standard style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-list-holder {
+    &.mkdf-pl-standard {
+        article {
+            .mkdf-pli-image {
+                width: 150px;
+
+            }
+
+            //.mkdf-pli-link {
+            //    z-index: 2;
+            //}
+
+            .mkdf-pli-title {
+                @include mkdfTransition(color .2s ease-out);
+            }
+
+            .mkdf-pli-title-link:hover {
+                .mkdf-pli-title {
+                    color: $first-main-color;
+                }
+            }
+
+            //&:hover {
+            //    .mkdf-pli-title {
+            //        color: $first-main-color;
+            //    }
+            //}
+        }
+
+        .mkdf-pli-text-holder {
+            @include mkdfRelativeHolderLayout();
+
+            margin: 21px 0 10px;
+
+            .mkdf-pli-category-holder {
+                margin: 1px 0 0;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Standard style - end
+   ========================================================================== */

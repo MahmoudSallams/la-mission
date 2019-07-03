@@ -1,0 +1,57 @@
+.mkdf-colored-clients {
+
+    $columns: ('two', 'three', 'four');
+
+    @for $i from 0 to length($columns) {
+        &.mkdf-#{nth($columns, $i+1)}-columns {
+            $column_width: 100%/($i+2);
+
+            .mkdf-cc-item {
+                width: $column_width;
+                display: inline-block;
+                float: left;
+
+                &:nth-child(#{$i+2}n+1) {
+                    clear: both;
+                }
+            }
+        }
+    }
+
+    .mkdf-cc-item {
+        position: relative;
+
+        .mkdf-cci-image-holder {
+            position: relative;
+
+            img {
+                display: block;
+            }
+
+            .mkdf-overlay-logo-holder {
+                background-color: #eeee22;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+
+                @include mkdfTransition(opacity .2s ease-in-out);
+            }
+        }
+
+        .mkdf-cci-logo-holder {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+
+            @include mkdfTransform(translateX(-50%) translateY(-50%));
+        }
+
+        &:hover {
+            .mkdf-overlay-logo-holder {
+                opacity: 0.8;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Social Icon widget style - begin
+   ========================================================================== */
+.mkdf-social-icon-widget-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.mkdf-social-icon-widget-holder.mkdf-custom-si-text span {
+  color: #000000;
+  font-size: 17px;
+  line-height: 1.235em;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  color: inherit;
+  display: inline;
+}
+
+.mkdf-social-icon-widget-holder .mkdf-social-icon-widget {
+  color: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+}
+
+.mkdf-fixed-wrapper.fixed .mkdf-social-icon-widget-holder.mkdf-custom-si-text span {
+  color: #fff;
+}
+
+.mkdf-dark-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-social-icon-widget-holder {
+  color: #000000 !important;
+}
+
+.mkdf-dark-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-social-icon-widget-holder:hover {
+  color: #a8a8a8 !important;
+}
+
+.mkdf-light-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-social-icon-widget-holder {
+  color: #ffffff !important;
+}
+
+.mkdf-light-header .mkdf-page-header > div:not(.mkdf-sticky-header):not(.fixed) .mkdf-social-icon-widget-holder:hover {
+  color: #a8a8a8 !important;
+}
+
+/* ==========================================================================
+   Social Icon widget style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=social-icon-widget-map.css.map */

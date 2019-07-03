@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Portfolio Single - Images layout style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-single-holder {
+    &.mkdf-ps-images-layout {
+        .mkdf-ps-image-holder {
+            .mkdf-ps-image {
+                margin: 0 0 30px;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                a {
+                    @include mkdfImageOverlayHoverStyle();
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio Single - Images layout style - end
+   ========================================================================== */

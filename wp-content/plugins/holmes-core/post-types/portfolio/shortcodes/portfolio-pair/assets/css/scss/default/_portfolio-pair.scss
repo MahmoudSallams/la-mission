@@ -1,0 +1,165 @@
+/* ==========================================================================
+   Product Pair shortcode styles - begin
+   ========================================================================== */
+
+.mkdf-portfolio-pair-holder {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin-bottom: 109px;
+
+    &.mkdf-big-portfolio-first {
+        direction: rtl;
+
+        .mkdf-ppi {
+            direction: ltr;
+
+            &.mkdf-small-portfolio {
+                .mkdf-ppi-inner {
+                    float: right;
+                }
+            }
+
+            &.mkdf-big-portfolio {
+                .mkdf-ppi-inner {
+                    float: left;
+                }
+            }
+        }
+    }
+
+    .mkdf-ppi {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0;
+        width: 50%;
+
+        @include ipad-landscape() {
+            padding: 0 10px;
+        }
+
+        @include ipad-portrait() {
+            padding: 0;
+        }
+
+        img {
+            -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+
+            @include mkdfTransition(all 1s cubic-bezier(0.05, 0.43, 0.04, 0.87));
+        }
+
+        &:hover {
+            img {
+                -webkit-clip-path: inset(15px 15px 15px 15px);
+                clip-path: inset(15px 15px 15px 15px);
+            }
+        }
+
+        &.mkdf-small-portfolio {
+            .mkdf-ppi-inner {
+                float: left;
+            }
+        }
+
+        &.mkdf-big-portfolio {
+            .mkdf-ppi-inner {
+                float: right;
+            }
+        }
+
+        .mkdf-ppi-inner {
+            display: inherit;
+
+            .mkdf-ppi-image {
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    display: block;
+                }
+            }
+
+            .mkdf-ppi-text-wrapper {
+                position: relative;
+                padding-top: 34px;
+
+                .mkdf-ppi-title {
+                    margin: 0;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                    float: left;
+                    text-transform: capitalize;
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        position: relative;
+
+                        span {
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+
+                            @include mkdfTransform(translateY(-50%));
+                        }
+
+                        svg {
+                            @include mkdfTransition(transform .6s $main-easing);
+                        }
+
+                        &:hover {
+                            svg {
+                                @include mkdfTransform(translateX(12px));
+                            }
+                        }
+                    }
+                }
+
+                .mkdf-ppi-category {
+                    margin: 3px 0 7px;
+                    padding: 0;
+                    float: left;
+                    position: relative;
+                    clear: both;
+                    line-height: 1;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+
+                    a {
+                        @include mkdfHeadingStyle(h6);
+                        @include mkdfTransition(color .2s ease-in-out);
+
+                        &:hover {
+                            color: $first-main-color;
+                        }
+
+                        &:not(:last-child) {
+                            &:after {
+                                content: ',';
+                                position: relative;
+                                right: 3px;
+                            }
+                        }
+                    }
+                }
+
+                span {
+                    svg {
+                        width: 21px;
+                    }
+                }
+
+                .mkdf-btn-simple {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Product Pair shortcode styles - end
+   ========================================================================== */

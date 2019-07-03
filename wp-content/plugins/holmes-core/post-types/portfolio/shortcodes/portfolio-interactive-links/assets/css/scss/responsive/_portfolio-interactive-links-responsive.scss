@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Interactive portfolio showcase shortcode responsive style - begin
+   ========================================================================== */
+
+.mkdf-ips {
+    .mkdf-ips-content-table-cell {
+        @include laptop-landscape-large() {
+            padding-left: 12%;
+        }
+    }
+
+    .mkdf-ips-item-link {
+        @include laptop-landscape-large() {
+            &:after {
+                border-bottom-width: 10px;
+                bottom: 25px;
+            }
+        }
+
+        @include ipad-landscape() {
+            color: #fff;
+        }
+
+        @include ipad-portrait() {
+            &:after {
+                bottom: 30px;
+            }
+        }
+
+        @include phone-landscape() {
+            &:after {
+                border-bottom-width: 3px;
+                bottom: 25px;
+            }
+        }
+
+        @include phone-portrait() {
+            &:after {
+                bottom: 15px;
+            }
+        }
+    }
+
+    .mkdf-ips-content-holder {
+        @include ipad-landscape() {
+            display: none;
+        }
+    }
+
+    .mkdf-ips-image-holder {
+        @include ipad-landscape() {
+            height: 100%;
+        }
+    }
+
+    .mkdf-ips-item-image {
+        @include ipad-landscape() {
+            display: block;
+            opacity: 1;
+            position: relative;
+            height: 100vh;
+
+            img {
+                display: block;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .mkdf-ips-item-content-copy {
+        @include ipad-landscape() {
+            display: block;
+            left: 5%;
+            position: absolute;
+            top: 50%;
+
+            @include mkdfTransform(translateY(-50%));
+        }
+    }
+}
+
+/* ==========================================================================
+   Interactive portfolio showcase shortcode responsive style - end
+   ========================================================================== */

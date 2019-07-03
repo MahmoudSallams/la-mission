@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Widgets styles
+   ========================================================================== */
+/* ==========================================================================
+   Instagram widget style - begin
+   ========================================================================== */
+aside.mkdf-sidebar .widget.widget_mkdf_instagram_widget .mkdf-widget-title,
+.wpb_widgetised_column .widget.widget_mkdf_instagram_widget .mkdf-widget-title {
+  margin: 0 0 25px;
+}
+
+aside.mkdf-sidebar .widget.widget_mkdf_instagram_widget a,
+.wpb_widgetised_column .widget.widget_mkdf_instagram_widget a {
+  border-radius: 50%;
+}
+
+.mkdf-instagram-feed {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mkdf-instagram-feed li {
+  float: left;
+  box-sizing: border-box;
+  border: none !important;
+}
+
+.mkdf-instagram-feed li a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.mkdf-instagram-feed li a .mkdf-instagram-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #000000;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.mkdf-instagram-feed li a:hover .mkdf-instagram-icon {
+  opacity: 1;
+}
+
+.mkdf-instagram-feed li a:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.mkdf-instagram-feed li img {
+  width: 100%;
+  display: block;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-no-space {
+  margin: 0;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-no-space li {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-tiny-space {
+  margin: 0 -5px -10px;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-tiny-space li {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-small-space {
+  margin: 0 -10px -20px;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-small-space li {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-normal-space {
+  margin: 0 -15px -30px;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-normal-space li {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-col-2 li {
+  width: 50%;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-col-3 li {
+  width: 33.33333%;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-col-4 li {
+  width: 25%;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-col-6 li {
+  width: 16.66667%;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-gallery.mkdf-col-9 li {
+  width: 11.11111%;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-carousel li {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.mkdf-instagram-feed.mkdf-instagram-carousel li a {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+/* ==========================================================================
+   Instagram widget style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/holmes-instagram-feed/assets/css/widget-map.css.map */

@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Portfolio Slider shortcode style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-slider-holder {
+    @include mkdfRelativeHolderLayout();
+
+    .mkdf-portfolio-list-holder {
+        .mkdf-outer-space {
+            margin: 0 !important;
+        }
+
+        &.mkdf-nav-light-skin {
+            .owl-nav {
+                .owl-prev,
+                .owl-next {
+                    color: $header-light-color;
+
+                    &:hover {
+                        color: $header-light-hover-color;
+                    }
+                }
+            }
+        }
+
+        &.mkdf-nav-dark-skin {
+            .owl-nav {
+                .owl-prev,
+                .owl-next {
+                    color: $header-dark-color;
+
+                    &:hover {
+                        color: $header-dark-hover-color;
+                    }
+                }
+            }
+        }
+
+        &.mkdf-pag-light-skin {
+            .owl-dots {
+                .owl-dot {
+                    span {
+                        background-color: rgba($header-light-color, .2);
+                        border-color: rgba($header-light-color, .2);
+                    }
+
+                    &.active,
+                    &:hover {
+                        span {
+                            background-color: $header-light-hover-color;
+                            border-color: $header-light-hover-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.mkdf-pag-dark-skin {
+            .owl-dots {
+                .owl-dot {
+                    span {
+                        background-color: rgba($header-dark-color, .2);
+                        border-color: rgba($header-dark-color, .2);
+                    }
+
+                    &.active,
+                    &:hover {
+                        span {
+                            background-color: $header-dark-hover-color;
+                            border-color: $header-dark-hover-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.mkdf-pag-on-slider {
+            .owl-nav {
+                .owl-prev,
+                .owl-next {
+                    @include mkdfTransform(translateY(-50%));
+                }
+            }
+
+            .owl-dots {
+                bottom: 20px;
+                left: 0;
+                margin: 0;
+                position: absolute;
+                width: 100%;
+            }
+        }
+
+        .owl-item:not(.active) {
+            .mkdf-pli-text-holder {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio Slider shortcode style - end
+   ========================================================================== */

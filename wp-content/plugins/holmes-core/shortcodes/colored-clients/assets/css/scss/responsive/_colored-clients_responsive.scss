@@ -1,0 +1,36 @@
+.mkdf-colored-clients {
+    @include ipad-landscape{
+        $columns: ('three', 'four');
+        @for $i from 0 to length($columns) {
+            &.mkdf-#{nth($columns, $i+1)}-columns {
+                $column_width: 50%;
+                .mkdf-cc-item {
+                    width: $column_width;
+                    display: inline-block;
+                    float: left;
+
+                    &:nth-child(#{$i+2}n+1){
+                        clear: none;
+                    }
+                    &:nth-child(2n+1) {
+                        clear: both;
+                    }
+                }
+            }
+        }
+    }
+
+    @include phone-landscape{
+        $columns: ('two', 'three', 'four');
+        @for $i from 0 to length($columns) {
+            &.mkdf-#{nth($columns, $i+1)}-columns {
+                $column_width: 100%;
+                .mkdf-cc-item {
+                    width: $column_width;
+                    display: inline-block;
+                    float: left;
+                }
+            }
+        }
+    }
+}

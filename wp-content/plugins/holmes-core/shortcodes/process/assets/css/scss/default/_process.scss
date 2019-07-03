@@ -1,0 +1,177 @@
+/* ==========================================================================
+   Process shortcode style - begin
+   ========================================================================== */
+
+.mkdf-process-holder {
+    @include mkdfRelativeHolderLayout();
+
+    $columns: ('two', 'three', 'four');
+    @for $i from 0 to length($columns) {
+        &.mkdf-#{nth($columns, $i+1)}-columns {
+            $column_width: 100%/($i+2);
+
+            .mkdf-mark-horizontal-holder {
+                .mkdf-process-mark {
+                    width: $column_width;
+                }
+            }
+
+            .mkdf-mark-vertical-holder {
+                .mkdf-process-mark {
+                    height: $column_width;
+                }
+            }
+
+            .mkdf-process-item {
+                width: $column_width;
+            }
+        }
+    }
+
+    .mkdf-process-mark {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+
+        &:last-child {
+            .mkdf-process-line {
+                display: none;
+            }
+        }
+
+        // @for $i from 2 to 5 {
+
+        // 	&:nth-child(#{$i}) {
+
+        // 		.mkdf-process-circle {
+        // 			-webkit-transition-delay: #{.5 * ($i - 1)}s;
+        // 			-moz-transition-delay: #{.5 * ($i - 1)}s;
+        // 			transition-delay: #{.5 * ($i - 1)}s;
+        // 		}
+
+        // 		.mkdf-process-line {
+        // 			-webkit-transition-delay: #{.6 * ($i - 1)}s;
+        // 			-moz-transition-delay: #{.6 * ($i - 1)}s;
+        // 			transition-delay: #{.6 * ($i - 1)}s;
+        // 		}
+        // 	}
+        // }
+    }
+
+    .mkdf-process-inner {
+        margin: 0 -44px;
+    }
+
+    .mkdf-process-item {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        float: left;
+        padding: 0 44px;
+        text-align: center;
+        box-sizing: border-box;
+
+        // @for $i from 2 to 5 {
+
+        // 	&:nth-child(#{$i}) {
+        // 		-webkit-transition-delay: #{.5 * ($i - 1)}s;
+        // 		-moz-transition-delay: #{.5 * ($i - 1)}s;
+        // 		transition-delay: #{.5 * ($i - 1)}s;
+        // 	}
+        // }
+    }
+
+    .mkdf-process-image-inner {
+        overflow: hidden;
+    }
+
+    .mkdf-process-image-holder {
+        position: relative;
+        display: inline-block;
+        //overflow: hidden;
+
+        img {
+            display: block;
+            height: auto;
+
+            @include mkdfTransform(translate3d(-110%, 0, 0));
+        }
+    }
+
+    .mkdf-pi-content {
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+        z-index: 2;
+        left: -47px;
+        text-align: left;
+        //top: 34%;
+    }
+
+    .mkdf-process-item {
+        &.mkdf-top {
+            .mkdf-pi-content {
+                top: 18%;
+            }
+        }
+
+        &.mkdf-bottom {
+            .mkdf-pi-content {
+                top: 38%;
+            }
+        }
+    }
+
+    .mkdf-pi-number {
+        @include mkdfHeadingStyle(h5);
+
+        margin: 0 0 13px 0;
+        display: inline-block;
+        width: 65px;
+        height: 65px;
+        color: #fff;
+        background-color: #000;
+        border-radius: 50%;
+        line-height: 65px;
+        text-align: center;
+    }
+
+    .mkdf-pi-title {
+        margin: 0;
+    }
+
+    &.mkdf-process-appeared {
+        .mkdf-process-circle {
+            opacity: 1;
+
+            @include mkdfTransform(scale(1));
+        }
+
+        .mkdf-mark-horizontal-holder {
+            .mkdf-process-line {
+                width: 100%;
+            }
+        }
+
+        .mkdf-mark-vertical-holder {
+            .mkdf-process-line {
+                height: 100%;
+            }
+        }
+
+        .mkdf-process-image-holder {
+            img {
+                display: block;
+
+                @include mkdfTransform(translate3d(0%, 0, 0));
+                @include mkdfTransitionTransform(2s $main-easing);
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Process shortcode style - end
+   ========================================================================== */

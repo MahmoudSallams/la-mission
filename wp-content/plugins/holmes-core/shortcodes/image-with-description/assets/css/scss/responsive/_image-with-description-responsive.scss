@@ -1,0 +1,10 @@
+.mkdf-image-with-description{
+    .mkdf-pt-wrapper{
+        @include ipad-landscape{
+            .mkdf-image-with-description-item{
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

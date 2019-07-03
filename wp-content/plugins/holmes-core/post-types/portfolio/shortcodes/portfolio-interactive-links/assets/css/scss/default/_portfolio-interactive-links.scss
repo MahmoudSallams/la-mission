@@ -1,0 +1,311 @@
+/* ==========================================================================
+   Interactive portfolio showcase shortcode style - begin
+   ========================================================================== */
+
+.mkdf-ips {
+    display: block;
+
+    .mkdf-ips-holder {
+        display: inline-block;
+        height: 100%;
+        position: relative;
+        width: 100%;
+    }
+
+    .mkdf-ips-image-holder {
+        display: inline-block;
+        height: 100vh;
+        left: 0;
+        position: relative;
+        top: 0;
+        vertical-align: middle;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .mkdf-ips-item-image {
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        @include mkdfTransition(opacity .4s cubic-bezier(0.05, 0.43, 0.04, 0.87));
+
+        img {
+            display: none;
+            height: 100%;
+            width: 100%;
+        }
+
+        &.active {
+            opacity: 1;
+            z-index: 100;
+
+            @include mkdfTransition(opacity .4s cubic-bezier(0.05, 0.43, 0.04, 0.87) .2s);
+        }
+    }
+
+    .mkdf-ips-content-holder {
+        display: inline-block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .mkdf-ips-content-table {
+        @include mkdfTableLayout();
+    }
+
+    .mkdf-ips-content-table-cell {
+        @include mkdfTableCellLayout();
+
+        padding: 0 7.8%;
+    }
+
+    .mkdf-ips-item-content {
+        &.active {
+            .mkdf-ips-item-link {
+                color: #ffffff;
+
+                &:after {
+                    opacity: 1;
+                }
+
+                .mkdf-box-shadow {
+                    width: 100%;
+
+                    &.mkdf-start {
+                        opacity: 0;
+
+                        @include mkdfTransition(width 0.3s ease 0.3s, opacity .0s ease 0.6s);
+                    }
+
+                    &.mkdf-end {
+                        visibility: visible;
+
+                        @include mkdfTransition(all .0s ease 0.6s);
+                    }
+                }
+            }
+        }
+
+        &.idle {
+            .mkdf-ips-item-link {
+                //opacity: 0.8;
+                //color: #ff00ff;
+            }
+        }
+
+        .mkdf-ips-item-excerpt {
+            margin: -13px 0 0;
+        }
+    }
+
+    &:not(.mkdf-ips-with-scroll) {
+        .mkdf-ips-item-content {
+            opacity: 0;
+
+            @include mkdfTransform(translate(0, 30px));
+
+            @for $i from 1 through 30 {
+                &:nth-child(#{$i}) {
+                    @include mkdfTransition(opacity .5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .45s + 0.1s * $i, transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .45s + 0.1s * $i);
+                }
+            }
+
+            &.loaded {
+                opacity: 1;
+
+                @include mkdfTransform(translate(0, 0));
+            }
+        }
+    }
+
+    .mkdf-ips-item-content-copy {
+        display: none;
+        font-weight: 600;
+    }
+
+    .mkdf-ips-item-link {
+        display: inline-block;
+        opacity: 1;
+        position: relative;
+
+        @include mkdfHeadingStyle(h1);
+
+        .mkdf-box-shadow {
+            background-color: $first-main-color;
+            height: 8px;
+            opacity: 0.75;
+            position: absolute;
+            top: 50%;
+            width: 0;
+            z-index: -1;
+
+            &.mkdf-start {
+                left: 0;
+            }
+
+            &.mkdf-end {
+                right: 0;
+                visibility: hidden;
+
+                @include mkdfTransition(width 0.3s ease, visibility .0s ease 0.3s);
+            }
+        }
+
+        &:hover {
+            .mkdf-box-shadow {
+                width: 100%;
+
+                &.mkdf-start {
+                    opacity: 0;
+
+                    @include mkdfTransition(width 0.3s ease 0.3s, opacity .0s ease 0.6s);
+                }
+
+                &.mkdf-end {
+                    visibility: visible;
+
+                    @include mkdfTransition(all .0s ease 0.6s);
+                }
+            }
+        }
+    }
+
+    &.mkdf-ips-with-scroll {
+        .mkdf-ips-item-content {
+            opacity: 0;
+            padding-bottom: 39px;
+        }
+
+        .touch & {
+            .mkdf-ips-item-content {
+                opacity: 1;
+            }
+        }
+
+        .no-touch & {
+            .mkdf-ips-image-holder {
+                position: fixed;
+            }
+
+            .mkdf-ips-item-content {
+                pointer-events: none;
+                transition: transform .7s, opacity 1s;
+                -webkit-transition: -webkit-transform .7s, opacity 1s;
+
+                &.mkdf-up {
+                    opacity: 0;
+
+                    @include mkdfTransform(translate3d(0, -30px, 0));
+                }
+
+                &.mkdf-down {
+                    opacity: 0;
+
+                    @include mkdfTransform(translate3d(0, 30px, 0));
+                }
+
+                &.mkdf-appeared {
+                    opacity: 1;
+
+                    @include mkdfTransform(translate3d(0, 0, 0));
+
+                    pointer-events: auto;
+                }
+            }
+        }
+
+        .mkdf-ips-content-holder {
+            position: relative;
+        }
+    }
+
+    &.mkdf-ips-light {
+        .mkdf-ips-item-content {
+            .mkdf-ips-item-link {
+                color: #ffffff;
+            }
+
+            &.active {
+                .mkdf-ips-item-link {
+                    color: #000000;
+                }
+            }
+
+            .mkdf-ips-item-excerpt {
+                color: #ffffff;
+            }
+
+        }
+
+        .mkdf-ips-intro-text {
+            color: #ffffff;
+        }
+    }
+
+    #mkdf-ips-intro {
+        align-items: flex-end;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        width: 100vw;
+
+        .mkdf-ips-intro-text {
+            line-height: 1;
+            margin: 0 0 -5vw;
+            visibility: hidden;
+            white-space: nowrap;
+
+            .mkdf-dot {
+                color: $first-main-color;
+            }
+        }
+
+        .no-touch & {
+            .mkdf-char-mask {
+                display: inline-block;
+                overflow: hidden;
+                vertical-align: middle;
+
+                > span {
+                    display: inline-block;
+                    visibility: hidden;
+
+                    @include mkdfTransform(translate3d(100%, 0, 0));
+
+                    &.mkdf-appeared {
+                        visibility: visible;
+
+                        @include mkdfTransform(translate3d(0, 0, 0));
+                        @include mkdfTransitionTransform(.3s cubic-bezier(0.05, 0.43, 0.04, 0.87));
+                    }
+                }
+            }
+        }
+    }
+
+    &.mkdf-remove-intro {
+        #mkdf-ips-intro .mkdf-char-mask {
+            > span.mkdf-appeared {
+                opacity: 0;
+
+                @include mkdfTransition(.35s cubic-bezier(0.05, 0.43, 0.04, 0.87) .3s);
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Interactive portfolio showcase shortcode style - end
+   ========================================================================== */

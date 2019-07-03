@@ -1,0 +1,24 @@
+@include phone-landscape{
+	.mkdf-int-icon-showcase{
+		.mkdf-int-icon-circle,
+		.mkdf-int-icon-showcase-inner{
+			width: calc(100% - 60px);
+			height: calc(100% - 60px);
+			margin: 30px;
+		}
+        .mkdf-showcase-icon{
+            width: 70px;
+            height: 70px;
+            .mkdf-icon-shortcode{
+                width: 55px;
+                height: 55px;
+                line-height: 55px;
+                font-size: 20px;
+            }
+        }
+
+        .mkdf-showcase-content-inner{
+            display: none;
+        }
+	}
+}

@@ -1,0 +1,129 @@
+.mkdf-twitter-list-holder {
+    @include mkdfRelativeHolderLayout();
+
+    clear: both;
+
+    .mkdf-twitter-list {
+        @include mkdfRelativeHolderLayout();
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mkdf-tl-item {
+        @include mkdfRelativeHolderLayout();
+
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mkdf-tli-inner {
+        @include mkdfRelativeHolderLayout();
+
+        background-color: #ffffff;
+
+        @include mkdfTransition(all .2s ease-in-out);
+
+        &:hover {
+            box-shadow: -2px 4px 13px 0 rgba(81, 137, 162, .05);
+
+            @include mkdfTransform(translateY(-3px));
+        }
+    }
+
+    .mkdf-tli-content {
+        @include mkdfRelativeHolderLayout();
+
+        border: 1px solid $additional-background-color;
+        box-sizing: border-box;
+        padding: 35px 23px;
+    }
+
+    .mkdf-twitter-content-top {
+        @include mkdfRelativeHolderLayout();
+
+        box-sizing: border-box;
+        margin-bottom: 25px;
+    }
+
+    .mkdf-twitter-link-over {
+        @include mkdfAbsoluteHolderLayout();
+
+        z-index: 1;
+    }
+
+    .mkdf-twitter-user {
+        @include mkdfRelativeHolderLayout();
+
+        box-sizing: border-box;
+        padding-right: 30px;
+
+        .mkdf-twitter-image {
+            display: inline-block;
+            float: left;
+            height: 56px;
+            position: relative;
+            vertical-align: top;
+            width: 56px;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .mkdf-twitter-name {
+            box-sizing: border-box;
+            display: inline-block;
+            float: left;
+            padding-left: 15px;
+            position: relative;
+            vertical-align: top;
+            width: calc(100% - 56px);
+
+            * {
+                margin: 0;
+            }
+        }
+    }
+
+    .mkdf-twitter-icon {
+        color: $first-main-color;
+        display: inline-block;
+        font-size: 24px;
+        position: absolute;
+        right: 3px;
+        text-align: right;
+        top: -7px;
+        vertical-align: top;
+        width: 20px;
+    }
+
+    .mkdf-tweet-text {
+        box-sizing: border-box;
+        padding-left: 12px;
+
+        a {
+            color: #808080;
+            position: relative;
+            z-index: 2;
+
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+    }
+
+    .mkdf-twitter-profile {
+        a {
+            color: #808080;
+            position: relative;
+            z-index: 2;
+
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+    }
+}

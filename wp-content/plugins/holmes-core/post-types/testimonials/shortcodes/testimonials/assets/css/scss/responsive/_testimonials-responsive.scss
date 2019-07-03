@@ -1,0 +1,25 @@
+.mkdf-testimonials-holder {
+
+    @include ipad-landscape() {
+        .mkdf-testimonials-holder-outer {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 50px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .mkdf-testimonal-nav-prev,
+        .mkdf-testimonal-nav-next {
+            display: none;
+        }
+    }
+
+    @include ipad-portrait() {
+        #mkdf-testimonial-pagination {
+            display: none;
+        }
+    }
+}
+
+

@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Call To Action shortcode style - begin
+   ========================================================================== */
+
+.mkdf-cta {
+    width: 100%;
+
+    &__text-holder {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 106px;
+        padding: 10px 64px;
+
+        h1, h2, h3, h4, h5, h6 {
+            color: inherit;
+            margin: 0;
+        }
+    }
+
+    &__text,
+    &__arrow {
+        display: inline-block;
+        color: inherit;
+    }
+
+    &__arrow {
+        color: inherit;
+        padding-left: 10px;
+        padding-bottom: 3px;
+        width: 20px;
+
+        path {
+            fill: currentColor !important;
+        }
+    }
+
+    svg {
+        @include mkdfTransitionTransform(.6s $main-easing);
+    }
+
+    &:hover {
+        svg {
+            @include mkdfTransform(translateX(12px));
+        }
+    }
+}
+
+/* ==========================================================================
+   Call To Action shortcode style - end
+   ========================================================================== */

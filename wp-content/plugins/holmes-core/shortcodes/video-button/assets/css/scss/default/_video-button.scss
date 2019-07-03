@@ -1,0 +1,218 @@
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+
+.mkdf-video-button-holder {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    &.mkdf-vb-has-img {
+        .mkdf-video-button-play-image {
+            @include mkdfAbsoluteHolderLayout();
+
+            z-index: 1;
+
+            .mkdf-video-button-play-inner {
+                position: relative;
+                top: 50%;
+                left: 0;
+                display: block;
+                text-align: center;
+
+                @include mkdfTransform(translateY(-50%));
+            }
+        }
+
+        .mkdf-video-button-play {
+            @include mkdfAbsoluteHolderLayout();
+
+            z-index: 1;
+
+            .mkdf-video-button-play-inner {
+                position: relative;
+                top: 50%;
+                display: inline-block;
+                left: 50%;
+                border-radius: 50%;
+                height: 90px;
+                width: 90px;
+                line-height: 90px;
+                text-align: center;
+
+                @include mkdfTransform(translateY(-50%) translateX(-50%));
+
+                &:after {
+                    content: '';
+
+                    @include mkdfAbsoluteHolderLayout();
+
+                    border-radius: 50%;
+                    background-color: #fff;
+
+                    @include mkdfTransitionTransform(1s $main-easing);
+                }
+            }
+        }
+    }
+
+    .mkdf-video-button-image {
+        @include mkdfRelativeHolderLayout();
+
+        img {
+            display: block;
+        }
+
+        .mkdf-video-button-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: #fff;
+            padding: 27px;
+            max-width: 280px;
+            -webkit-clip-path: inset(0 0 0 100%);
+            clip-path: inset(0 0 0 100%);
+            -webkit-transition: -webkit-clip-path 2s $main-easing;
+            transition: clip-path 2s $main-easing;
+
+            .mkdf-video-button-title {
+                margin-bottom: 38px;
+            }
+
+            @include ipad-landscape {
+                display: none;
+            }
+        }
+    }
+
+    .mkdf-video-button-play,
+    .mkdf-video-button-play-image {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        z-index: 1;
+    }
+
+    .mkdf-video-button-play {
+        color: $default-heading-color;
+        font-size: 0;
+        line-height: 1;
+
+        span {
+            display: block;
+            line-height: inherit;
+            position: relative;
+            height: 100%;
+            z-index: 10;
+
+            svg {
+                width: 17px;
+                top: 50%;
+                position: absolute;
+                left: 52%;
+
+                @include mkdfTransform(translateY(-50%) translateX(-50%));
+            }
+        }
+
+        &:hover {
+            .mkdf-video-button-play-inner:after {
+                @include mkdfTransform(scale(1.12));
+            }
+        }
+    }
+
+    .mkdf-video-button-play-image {
+        &.mkdf-vb-has-hover-image {
+            &:hover {
+                img {
+                    &:first-child {
+                        opacity: 0;
+                    }
+
+                    &:nth-child(2) {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+
+            @include mkdfTransition(opacity .3s ease-in-out);
+
+            &:first-child {
+                position: relative;
+                opacity: 1;
+            }
+
+            &:nth-child(2) {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                opacity: 0;
+
+                @include mkdfTransform(translateX(-50%) translateZ(0));
+
+                .rev_slider_wrapper & {
+                    @include mkdfTransform(translateZ(0));
+                }
+            }
+        }
+    }
+
+    &.mkdf-appeared,
+    .touch & {
+        .mkdf-video-button-text {
+            -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+        }
+    }
+
+    &.mkdf-small,
+    &.mkdf-medium,
+    &.mkdf-large {
+        .mkdf-video-button-play-inner {
+            width: 50px !important;
+            height: 50px !important;
+            line-height: 50px !important;
+
+            svg {
+                width: 9px !important;
+            }
+        }
+    }
+
+    &.mkdf-small {
+        .mkdf-video-button-image {
+            img {
+                height: auto !important;
+                width: 195px !important;
+            }
+        }
+    }
+
+    &.mkdf-medium {
+        .mkdf-video-button-image {
+            img {
+                height: auto !important;
+                width: 295px !important;
+            }
+        }
+    }
+
+    &.mkdf-large {
+        .mkdf-video-button-image {
+            img {
+                height: auto !important;
+                width: 395px !important;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */

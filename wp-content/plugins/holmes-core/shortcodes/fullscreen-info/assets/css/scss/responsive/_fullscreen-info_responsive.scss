@@ -1,0 +1,61 @@
+/* Laptop */
+@include laptop-landscape-large {
+    .mkdf-fullscreen-info.mkdf-fi-outro  {
+        .mkdf-outro-img,
+        svg {
+            margin-bottom: 2vh;
+        }
+
+        .mkdf-btm-info-holder {
+            bottom: 8vh;
+        }
+    }
+}
+
+@include ipad-landscape {
+    #mkdf-intro {
+        .mkdf-intro-inner {
+            padding-top: 0;
+        }
+    }
+}
+
+
+/* Landscape */
+@media only screen and (max-device-width: 812px) and (orientation: landscape) {
+    #mkdf-intro {
+        .mkdf-scroll-down {
+            display: none;
+        }
+    }
+
+    #mkdf-outro {
+        .mkdf-btm-info-holder,
+        .mkdf-outro-img,
+        svg {
+            display: none;
+        }
+
+        .mkdf-outro-img {
+            margin-bottom: 9vh;
+        }
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (max-device-width: 736px) 
+  and (orientation: portrait) { 
+    #mkdf-outro {
+        .mkdf-btm-info-holder,
+        svg {
+            display: none;
+        }
+        
+        .mkdf-outro-img {
+            display: block;
+            margin: 0 auto 9vh;
+            max-width: 80%;
+        }
+    }
+}

@@ -1,0 +1,4 @@
+1.1
+- Improved framework files
+- Updated Revolution Slider to 5.4.8.3
+- Updated Holmes Core to 1.1

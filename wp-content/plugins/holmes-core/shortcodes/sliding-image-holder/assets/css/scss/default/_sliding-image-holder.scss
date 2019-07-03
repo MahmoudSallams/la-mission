@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Pricing Calculator shortcode start styles
+   ========================================================================== */
+.mkdf-sliding-image-holder {
+	position: relative;
+
+	.mkdf-sih-image-holder {
+		position: absolute;
+		overflow: hidden;
+		background-size: cover;
+		background-repeat: no-repeat;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+
+		.mkdf-sliding-image-background-image {
+			position: relative;
+			max-width: 360%;
+
+			&.mkdf-aux-background-image {
+				position: absolute;
+				top: 0;
+				left: 360%;
+			}
+		}
+	}
+
+}
+
+
+/* ==========================================================================
+   Pricing Calculator shortcode end styles
+   ========================================================================== */

@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Image With List shortcode style - begin
+   ========================================================================== */
+
+.mkdf-image-with-list{
+    .mkdf-image-with-list-item{
+        .mkdf-iwl-image-holder{
+            position: relative;
+            margin: 0 0 42px;
+
+            img{
+                display: block;
+            }
+
+            .mkdf-iwl-number-holder{
+                @include mkdfHeadingStyle(h4);
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: #fff;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                text-align: center;
+                line-height: 80px;
+            }
+        }
+
+        .mkdf-iwl-content-holder{
+            padding-right: 80px;
+
+            .mkdf-iwl-title{
+
+                &:after{
+                    content: ' ';
+                    width: 26px;
+                    height: 2px;
+                    background-color: #000;
+                    display:block;
+                    position: relative;
+                    top: 10px;
+                }
+            }
+
+            .mkdf-linkable-list-holder{
+                margin-top: 61px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Image With List shortcode style - end
+   ========================================================================== */

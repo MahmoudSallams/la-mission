@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Team shortcode style - begin
+   ========================================================================== */
+
+.mkdf-team-holder {
+    @include mkdfRelativeHolderLayout();
+
+    &.mkdf-team-info-on-image {
+        .touch & {
+            cursor: pointer;
+        }
+
+        &:hover {
+            .mkdf-team-info {
+                opacity: 1;
+            }
+        }
+
+        .mkdf-team-info {
+            padding: 20px 2% 35px 5%;
+            margin: 0;
+            position: absolute;
+            width: calc(100% - 30px);
+            left: 15px;
+            bottom: 15px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            opacity: 0;
+
+            @include mkdfTransitionTransform(.45s cubic-bezier(0.64, 0.01, 0.15, 1.16), opacity .5s);
+            @include mkdfTransform(translate3d(0, 0, 0));
+
+            .mkdf-team-position {
+                margin-bottom: 22px;
+            }
+
+            .mkdf-team-name {
+                margin: 0 0 15px;
+            }
+
+            .mkdf-team-social-wrapper {
+                margin: 5px 0 0;
+
+                .mkdf-social-title {
+                    display: inline-block;
+                    margin: 0 7px 0 0;
+                }
+            }
+        }
+    }
+
+    .mkdf-team-image {
+        @include mkdfRelativeHolderLayout();
+
+        img {
+            display: block;
+        }
+    }
+
+    .mkdf-team-info {
+        @include mkdfRelativeHolderLayout();
+
+        margin: 26px 0 0;
+    }
+
+    .mkdf-team-position {
+        margin: 19px 0 24px;
+    }
+
+    .mkdf-team-name {
+        margin: 11px 0 0;
+    }
+
+    .mkdf-team-text {
+        margin: 22px 0 0;
+        line-height: 1.62;
+    }
+
+    .mkdf-team-social-wrapper {
+        margin-top: 31px;
+
+        .mkdf-social-title {
+            margin-bottom: -3px;
+        }
+
+        a {
+            display: inline-block;
+            margin-right: 7px;
+
+            h5 {
+                color: inherit;
+            }
+
+            &:hover {
+                color: $first-main-color;
+
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Team shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,181 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+.mkdf-instagram-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+  width: 100%;
+}
+
+.mkdf-instagram-list-holder:not(.mkdf-il-one-column) .mkdf-il-item {
+  float: left;
+}
+
+.mkdf-instagram-list-holder.mkdf-il-with-top-border {
+  padding-top: 42px;
+  border-top: 1px solid #f3f3f3;
+}
+
+.mkdf-instagram-list-holder.mkdf-il-with-bottom-border {
+  padding-bottom: 42px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.mkdf-instagram-list-holder.mkdf-il-with-title .mkdf-instagram-carousel-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15%;
+  height: 100%;
+}
+
+.mkdf-instagram-list-holder.mkdf-il-with-title .mkdf-instagram-carousel-text .mkdf-instagram-carousel-text-wrap {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.mkdf-instagram-list-holder.mkdf-il-with-title .mkdf-instagram-carousel-text .mkdf-instagram-carousel-text-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mkdf-instagram-list-holder.mkdf-il-with-title .mkdf-instagram-carousel-text .mkdf-instagram-carousel-text-inner > span {
+  font-size: 44px;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.mkdf-instagram-list-holder.mkdf-il-with-title .mkdf-instagram-carousel-text .mkdf-instagram-carousel-text-inner > h4 {
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 0 20%;
+  margin-top: 12px;
+  line-height: 2em;
+}
+
+.mkdf-instagram-list-holder .mkdf-instagram-carousel-text + .mkdf-instagram-carousel {
+  width: calc(85% - 50px);
+  margin-left: 15% !important;
+}
+
+.mkdf-instagram-list-holder .mkdf-instagram-carousel {
+  margin: 0 !important;
+}
+
+.mkdf-instagram-list-holder .mkdf-instagram-carousel .mkdf-il-item {
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  float: none !important;
+}
+
+.mkdf-instagram-list-holder .mkdf-il-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mkdf-instagram-list-holder .mkdf-il-item .mkdf-il-item-username {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  color: #fff;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.mkdf-instagram-list-holder .mkdf-il-item .mkdf-il-item-username:before {
+  content: '@';
+}
+
+.mkdf-instagram-list-holder .mkdf-il-item .mkdf-il-item-text {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  color: #fff;
+  font-size: 18px;
+  padding-right: 32px;
+  opacity: 0;
+  box-sizing: border-box;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.mkdf-instagram-list-holder .mkdf-il-item:hover .mkdf-il-item-username,
+.mkdf-instagram-list-holder .mkdf-il-item:hover .mkdf-il-item-text {
+  opacity: 1;
+}
+
+.mkdf-instagram-list-holder.mkdf-il-two-columns .mkdf-il-item {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkdf-instagram-list-holder.mkdf-il-two-columns .mkdf-il-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-instagram-list-holder.mkdf-il-three-columns .mkdf-il-item {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1201px) {
+  .mkdf-instagram-list-holder.mkdf-il-three-columns .mkdf-il-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-instagram-list-holder.mkdf-il-four-columns .mkdf-il-item {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkdf-instagram-list-holder.mkdf-il-four-columns .mkdf-il-item:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-instagram-list-holder.mkdf-il-five-columns .mkdf-il-item {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .mkdf-instagram-list-holder.mkdf-il-five-columns .mkdf-il-item:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-instagram-list-holder.mkdf-il-six-columns .mkdf-il-item {
+  width: 16.66667%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .mkdf-instagram-list-holder.mkdf-il-six-columns .mkdf-il-item:nth-child(6n+1) {
+    clear: both;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/holmes-instagram-feed/assets/css/shortcodes-map.css.map */
